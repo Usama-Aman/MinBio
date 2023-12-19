@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashColor">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signInCurvedGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <ImageView
+        android:id="@+id/signUpLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_logo"
+        app:layout_constraintBottom_toTopOf="@id/signInCurvedGuideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/curved_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signInCurvedGuideline">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/sigInTitleGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/startGuidline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/endGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottomGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/editTextGuieline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.17" />
+
+
+        <TextView
+            android:id="@+id/tvConfirmationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/EmailConfirmationTitle"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium20sp"
+            app:layout_constraintBottom_toBottomOf="@id/sigInTitleGuideline"
+            app:layout_constraintLeft_toRightOf="@id/startGuidline"
+            app:layout_constraintTop_toTopOf="@id/sigInTitleGuideline" />
+
+
+        <TextView
+            android:id="@+id/tvEmailConfirmationText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_boldcondensed"
+            android:padding="3sp"
+            android:text="@string/EmailConfirmationMessage"
+            android:textColor="@color/labelColor"
+            app:layout_constraintLeft_toLeftOf="@id/startGuidline"
+            app:layout_constraintRight_toRightOf="@id/endGuideline"
+            app:layout_constraintTop_toBottomOf="@id/editTextGuieline" />
+
+
+        <TextView
+            android:id="@+id/tvEmailNotRevieved"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_boldcondensed"
+            android:padding="3sp"
+            android:text="@string/EmailConfirmationErrorMessageYou_have_not_received_the_mail"
+            android:textAlignment="center"
+            android:textColor="@color/labelColor"
+            app:layout_constraintLeft_toLeftOf="@id/startGuidline"
+            app:layout_constraintRight_toRightOf="@id/endGuideline"
+            app:layout_constraintTop_toBottomOf="@id/tvEmailConfirmationText" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnSendEmailBack"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/large_button_size"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/round_button"
+            android:minWidth="@dimen/_70sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            app:layout_constraintLeft_toLeftOf="@id/startGuidline"
+            app:layout_constraintRight_toRightOf="@id/endGuideline"
+            app:layout_constraintTop_toBottomOf="@id/tvEmailNotRevieved" >
+
+
+            <ImageView
+                android:id="@+id/i"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/ic_send_me"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/bText"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/emailConfirmationSendMeBack"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/i"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnToLoginEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/large_button_size"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/round_button_green"
+            android:minWidth="@dimen/_70sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            app:layout_constraintLeft_toLeftOf="@id/startGuidline"
+            app:layout_constraintRight_toRightOf="@id/endGuideline"
+            app:layout_constraintTop_toBottomOf="@id/bottomGuideline">
+
+
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/ic_login"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/bText2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/EmailConfirmationToLogIn"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/i2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

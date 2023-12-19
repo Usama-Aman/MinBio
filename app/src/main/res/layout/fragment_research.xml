@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/tvResearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/search_a_product"
+            android:textAllCaps="true"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/medium18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvKeyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/keywords"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvResearch" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".85" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <AutoCompleteTextView
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/border_editext_small"
+            android:hint="@string/eggplant_apple_batavia"
+            android:imeOptions="actionDone"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:textSize="@dimen/small14sp"
+            app:layout_constraintLeft_toRightOf="@id/s"
+            app:layout_constraintRight_toLeftOf="@id/e"
+            app:layout_constraintTop_toBottomOf="@id/tvKeyword" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/crossSearch"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="@id/etSearch"
+            app:layout_constraintLeft_toRightOf="@id/etSearch"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/etSearch">
+
+            <ImageView
+                android:layout_width="@dimen/_8sdp"
+                android:layout_height="@dimen/_8sdp"
+                android:src="@drawable/cross"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/researchVendor"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="@id/s"
+            app:layout_constraintRight_toLeftOf="@id/center"
+            app:layout_constraintTop_toBottomOf="@id/etSearch" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/vendorConstraint"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/border_editext_small"
+            app:layout_constraintLeft_toLeftOf="@id/s"
+            app:layout_constraintRight_toLeftOf="@id/center"
+            app:layout_constraintTop_toBottomOf="@id/tvLabel">
+
+
+            <ImageView
+                android:id="@+id/arrowdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:scaleType="center"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/vendorsSpinnerText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingStart="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/arrowdown"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/OriginConstraint"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/border_editext_small"
+            app:layout_constraintLeft_toLeftOf="@id/center"
+            app:layout_constraintRight_toRightOf="@id/e"
+            app:layout_constraintTop_toBottomOf="@id/tvLabel">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:scaleType="center"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.vic.vicwsp.Controllers.Helpers.CustomSearchableSpinner
+                android:id="@+id/originSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:paddingEnd="@dimen/_12sdp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tvOrigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/researchOrigin"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="@id/center"
+            app:layout_constraintRight_toRightOf="@id/e"
+            app:layout_constraintTop_toBottomOf="@id/etSearch" />
+
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/researchPrice"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vendorConstraint" />
+
+
+        <EditText
+            android:id="@+id/etMinPrice"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/border_editext_small"
+            android:hint="@string/min"
+            android:imeOptions="flagNavigateNext"
+            android:inputType="number"
+            android:maxLength="8"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toLeftOf="@id/guideline3"
+            app:layout_constraintRight_toRightOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/tvPrice" />
+
+        <TextView
+            android:id="@+id/tvMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="€/Kg"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/etMinPrice"
+            app:layout_constraintLeft_toRightOf="@id/etMinPrice"
+            app:layout_constraintTop_toTopOf="@id/etMinPrice" />
+
+
+        <TextView
+            android:id="@+id/tvMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="€/Kg"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/etMaxPrice"
+            app:layout_constraintLeft_toRightOf="@id/etMaxPrice"
+            app:layout_constraintTop_toTopOf="@id/etMaxPrice" />
+
+        <EditText
+            android:id="@+id/etMaxPrice"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/border_editext_small"
+            android:hint="@string/max"
+            android:inputType="number"
+            android:maxLength="8"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toLeftOf="@id/center"
+            app:layout_constraintRight_toRightOf="@id/e"
+            app:layout_constraintTop_toBottomOf="@id/tvPrice" />
+
+
+        <ImageView
+            android:id="@+id/btnResearch"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginTop="30dp"
+            android:scaleType="center"
+            android:src="@drawable/search"
+            app:layout_constraintLeft_toLeftOf="@id/guideline3"
+            app:layout_constraintRight_toRightOf="@id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/etMinPrice" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

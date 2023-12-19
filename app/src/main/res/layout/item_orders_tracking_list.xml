@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvTrackingOrderNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/trackOrderHeaderBackground"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/trackingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvTrackingOrderNumber">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+        <TextView
+            android:id="@+id/tvSellerNameLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/companyNameLabelTrackScreen"
+            android:textColor="@color/edittextBoderColor"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvItemsLabel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvItemsLabel"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/itemsLabel"
+            android:textAlignment="textEnd"
+            android:textColor="@color/edittextBoderColor"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="0.9dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tvSellerNameLabel" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/companySiretRecycler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSellerNameLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="0.9dp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/trackingLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/trackingDriverLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/white"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/v2">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/driverImage"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/place_holder"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTrackingDriverNameLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/driverNameLabel"
+            android:textColor="@color/edittextBoderColor"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintLeft_toRightOf="@id/driverImage"
+            app:layout_constraintRight_toLeftOf="@id/chatDriverLayout"
+            app:layout_constraintTop_toTopOf="@id/driverImage" />
+
+
+        <TextView
+            android:id="@+id/tvTrackingDriverName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toRightOf="@id/driverImage"
+            app:layout_constraintRight_toLeftOf="@id/chatDriverLayout"
+            app:layout_constraintTop_toBottomOf="@id/tvTrackingDriverNameLabel" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pinTrackLayout"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintBottom_toBottomOf="@id/driverImage"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/driverImage">
+
+            <ImageView
+                android:id="@+id/btnTrack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/map_pin"
+                android:visibility="visible"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/trackingLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:textColor="@color/edittextBoderColor"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintTop_toBottomOf="@id/btnTrack" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/chatDriverLayout"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/driverImage"
+            app:layout_constraintRight_toLeftOf="@id/pinTrackLayout"
+            app:layout_constraintTop_toTopOf="@id/driverImage">
+
+            <ImageView
+                android:id="@+id/btnChat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_chat_nego"
+                android:visibility="visible"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chatLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/chat"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:textColor="@color/edittextBoderColor"
+                android:textSize="@dimen/_9sdp"
+                app:layout_constraintTop_toBottomOf="@id/btnChat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tvTrackingDriverName,chatDriverLayout,pinTrackLayout,driverImage" />
+
+
+        <ImageView
+            android:id="@+id/ivCarPlate"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_plate"
+            android:visibility="visible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/b" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/trackingStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/grey"
+        android:fontFamily="@font/roboto_bold"
+        android:padding="@dimen/_2sdp"
+        android:textAlignment="center"
+        android:textColor="@color/labelColor"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trackingDriverLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

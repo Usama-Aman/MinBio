@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/commentsToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/splashColor"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/commentsToolbarBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:scaleType="center"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/toolbarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/comments"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loaderConstraint"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/mkLoader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mk_color="@color/splashColor"
+            app:mk_type="FishSpinner" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/ivListNull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/product"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvListNull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/currently_there_is_no_data"
+        android:textColor="@color/splashColor"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivListNull" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/commentsToolBar">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <TextView
+            android:id="@+id/tvPricing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingEnd="5dp"
+            android:text="@string/pricing"
+            android:textAllCaps="false"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="@id/start"
+            app:layout_constraintRight_toRightOf="@id/center"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvProductQuality"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingEnd="5dp"
+            android:text="@string/product_quality"
+            android:textAllCaps="false"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="@id/start"
+            app:layout_constraintRight_toRightOf="@id/center"
+            app:layout_constraintTop_toBottomOf="@id/tvPricing" />
+
+        <TextView
+            android:id="@+id/tvProductAvailability"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingEnd="5dp"
+            android:text="@string/product_availability"
+            android:textAllCaps="false"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="@id/start"
+            app:layout_constraintRight_toRightOf="@id/center"
+            app:layout_constraintTop_toBottomOf="@id/tvProductQuality" />
+
+        <TextView
+            android:id="@+id/tvRelationWithBuyer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingEnd="5dp"
+            android:text="@string/relation_with_buyer"
+            android:textAllCaps="false"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="@id/start"
+            app:layout_constraintRight_toRightOf="@id/center"
+            app:layout_constraintTop_toBottomOf="@id/tvProductAvailability" />
+
+
+        <TextView
+            android:id="@+id/tvTrustRelation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingEnd="5dp"
+            android:text="@string/trust_relation"
+            android:textAllCaps="false"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="@id/start"
+            app:layout_constraintRight_toRightOf="@id/center"
+            app:layout_constraintTop_toBottomOf="@id/tvRelationWithBuyer" />
+
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/ratingPricing"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_17sdp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:transitionName="ratingProductDetail"
+            app:layout_constraintBottom_toBottomOf="@id/tvPricing"
+            app:layout_constraintLeft_toLeftOf="@id/center"
+            app:layout_constraintRight_toRightOf="@id/end"
+            app:layout_constraintTop_toTopOf="@id/tvPricing" />
+
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/ratingProductQ"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_17sdp"
+            android:isIndicator="true"
+            android:numStars="5"
+            app:layout_constraintBottom_toBottomOf="@id/tvProductQuality"
+            app:layout_constraintLeft_toLeftOf="@id/center"
+            app:layout_constraintRight_toRightOf="@id/end"
+            app:layout_constraintTop_toTopOf="@id/tvProductQuality" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/ratingAvailability"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_17sdp"
+            android:isIndicator="true"
+            android:numStars="5"
+            app:layout_constraintBottom_toBottomOf="@id/tvProductAvailability"
+            app:layout_constraintLeft_toLeftOf="@id/center"
+            app:layout_constraintRight_toRightOf="@id/end"
+            app:layout_constraintTop_toTopOf="@id/tvProductAvailability" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/ratingRelation"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_17sdp"
+            android:isIndicator="true"
+            android:numStars="5"
+            app:layout_constraintBottom_toBottomOf="@id/tvRelationWithBuyer"
+            app:layout_constraintLeft_toLeftOf="@id/center"
+            app:layout_constraintRight_toRightOf="@id/end"
+            app:layout_constraintTop_toTopOf="@id/tvRelationWithBuyer" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/ratingTrust"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_17sdp"
+            android:isIndicator="true"
+            android:numStars="5"
+            app:layout_constraintBottom_toBottomOf="@id/tvTrustRelation"
+            app:layout_constraintLeft_toLeftOf="@id/center"
+            app:layout_constraintRight_toRightOf="@id/end"
+            app:layout_constraintTop_toTopOf="@id/tvTrustRelation" />
+
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@color/labelColor"
+            app:layout_constraintTop_toBottomOf="@id/tvTrustRelation" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commentsRecycler"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/start"
+            app:layout_constraintRight_toRightOf="@id/end"
+            app:layout_constraintTop_toBottomOf="@id/v" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

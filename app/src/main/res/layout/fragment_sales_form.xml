@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/catalogueBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/white"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/tvMerchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/sales_form"
+            android:textAllCaps="true"
+            android:textColor="@color/signUpButtonColor"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gForDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gmid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gStart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <TextView
+            android:id="@+id/tvSalesName"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/productName"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/etSalesName"
+            app:layout_constraintTop_toBottomOf="@id/tvMerchant" />
+
+        <EditText
+            android:id="@+id/etSalesName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_edit_text"
+            android:fontFamily="@font/roboto_regular"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/small14sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvSalesName"
+            app:layout_constraintLeft_toRightOf="@id/gmid"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvSalesName" />
+
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/inventory"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/QuantityLinear"
+            app:layout_constraintTop_toBottomOf="@id/etSalesName" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/QuantityLinear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/purchase_edittext"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tvAmount"
+            app:layout_constraintLeft_toRightOf="@id/gmid"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvAmount">
+
+
+            <EditText
+                android:id="@+id/etSalesQuantity"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/purchase_edittext"
+                android:cursorVisible="true"
+                android:fontFamily="@font/roboto_bold"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textAlignment="center"
+                android:textColor="@color/labelColor"
+                android:textSize="@dimen/small14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/dropDownInventory"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/tvStockUnit"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingEnd="@dimen/_16sdp"
+                android:textColor="@color/edittextHintColor"
+                android:textSize="@dimen/small14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/etSalesQuantity"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tvPriceSales"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/productPrice"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/priceLinear"
+            app:layout_constraintTop_toBottomOf="@id/tvAmount" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/priceLinear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/purchase_edittext"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tvPriceSales"
+            app:layout_constraintLeft_toRightOf="@id/gmid"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvPriceSales">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gggg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6" />
+
+            <EditText
+                android:id="@+id/etSalesPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/purchase_edittext"
+                android:cursorVisible="true"
+                android:fontFamily="@font/roboto_bold"
+                android:imeOptions="actionNext"
+                android:maxLength="8"
+                android:textAlignment="center"
+                android:textColor="@color/labelColor"
+                android:textSize="@dimen/small14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/gggg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSalesPriceSign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/edittextHintColor"
+                android:textSize="@dimen/small14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/gggg"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tvSaleCase"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/sale_by_case_of"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/SaleCaseLinear"
+            app:layout_constraintTop_toBottomOf="@id/tvPriceSales" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/SaleCaseLinear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/purchase_edittext"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tvSaleCase"
+            app:layout_constraintLeft_toRightOf="@id/gmid"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvSaleCase">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <EditText
+                android:id="@+id/etSalesCase"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/purchase_edittext"
+                android:cursorVisible="true"
+                android:fontFamily="@font/roboto_bold"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal|numberSigned"
+                android:digits="0123456789.-"
+                android:maxLength="8"
+                android:textAlignment="center"
+                android:textColor="@color/labelColor"
+                android:textSize="@dimen/small14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/gg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/dropDownSaleCase"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSaleCaseUnit"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="1dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/edittextHintColor"
+                android:textSize="@dimen/small14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/gg"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tvBioSales"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:drawableEnd="@drawable/ab"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/product_from_organic_farming"
+            android:textAlignment="textStart"
+            android:textColor="@color/signUpButtonColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/bioSwtichSales"
+            app:layout_constraintTop_toBottomOf="@id/tvSaleCase" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/bioSwtichSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tvBioSales"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvBioSales"
+            app:sb_checked_color="@color/splashColor" />
+
+
+        <TextView
+            android:id="@+id/tvNegoSales"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:drawableEnd="@drawable/pr"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/i_am_open_to_negotiation"
+            android:textAlignment="textStart"
+            android:textColor="@color/splashColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/negoSwtichSales"
+            app:layout_constraintTop_toBottomOf="@id/bioSwtichSales" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/negoSwtichSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tvNegoSales"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvNegoSales"
+            app:sb_checked_color="@color/signInButtonColor" />
+
+
+        <TextView
+            android:id="@+id/tvNegoThreshold"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/threshold_price"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/end"
+            app:layout_constraintTop_toBottomOf="@id/negoSwtichSales" />
+
+
+        <EditText
+            android:id="@+id/etSalesMinPrice"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border_editext_small"
+            android:fontFamily="@font/roboto_bold"
+            android:hint="@string/min"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/small12sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tvNegoThreshold"
+            app:layout_constraintLeft_toLeftOf="@id/end"
+            app:layout_constraintRight_toRightOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvNegoThreshold" />
+
+
+        <TextView
+            android:id="@+id/tvSalesSizes"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/product_select_size"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/sizeLinear"
+            app:layout_constraintTop_toBottomOf="@id/etSalesMinPrice" />
+
+
+        <LinearLayout
+            android:id="@+id/sizeLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/border_edit_text"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tvSalesSizes"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvSalesSizes">
+
+
+            <com.vic.vicwsp.Controllers.Helpers.CustomSearchableSpinner
+                android:id="@+id/salesSizesSspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvSalesClass"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/product_select_class"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/sizeLinear"
+            app:layout_constraintTop_toBottomOf="@id/sizeLinear" />
+
+
+        <LinearLayout
+            android:id="@+id/classLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/border_edit_text"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tvSalesClass"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvSalesClass">
+
+
+            <com.vic.vicwsp.Controllers.Helpers.CustomSearchableSpinner
+                android:id="@+id/salesClassSspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvSalesVat"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/vat"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/vatLinear"
+            app:layout_constraintTop_toBottomOf="@id/classLinear" />
+
+
+        <LinearLayout
+            android:id="@+id/vatLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/border_edit_text"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tvSalesVat"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvSalesVat">
+
+
+            <com.vic.vicwsp.Controllers.Helpers.CustomSearchableSpinner
+                android:id="@+id/vatSspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvSalesDiscount"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/productDiscount"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/discountLinear"
+            app:layout_constraintTop_toBottomOf="@id/vatLinear" />
+
+
+        <LinearLayout
+            android:id="@+id/discountLinear"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:background="@drawable/purchase_edittext"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tvSalesDiscount"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvSalesDiscount">
+
+            <EditText
+                android:id="@+id/etSalesDiscount"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/purchase_edittext"
+                android:cursorVisible="true"
+                android:fontFamily="@font/roboto_bold"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/labelColor"
+                android:textSize="@dimen/small14sp" />
+
+            <TextView
+                android:id="@+id/tvSalesDiscountUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/percentage"
+                android:textColor="@color/edittextHintColor"
+                android:textSize="@dimen/small14sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvSalesOrigin"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/origin"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/originLinear"
+            app:layout_constraintTop_toBottomOf="@id/discountLinear" />
+
+
+        <LinearLayout
+            android:id="@+id/originLinear"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="0dp"
+            android:background="@drawable/border_edit_text"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tvSalesOrigin"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvSalesOrigin">
+
+
+            <com.vic.vicwsp.Controllers.Helpers.CustomSearchableSpinner
+                android:id="@+id/salesOriginSspinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvSalesDetails"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/productDetails"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/etSalesDetails"
+            app:layout_constraintTop_toBottomOf="@id/originLinear" />
+
+
+        <EditText
+            android:id="@+id/etSalesDetails"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_80sdp"
+            android:background="@drawable/border_edit_text"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gForDetails"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvSalesDetails" />
+
+
+        <TextView
+            android:id="@+id/tvSalesPhotos"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/photos"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gStart2"
+            app:layout_constraintRight_toLeftOf="@id/photoGrid"
+            app:layout_constraintTop_toBottomOf="@id/etSalesDetails" />
+
+
+        <com.nex3z.flowlayout.FlowLayout
+            android:id="@+id/photoGrid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:flChildSpacing="auto"
+            app:flChildSpacingForLastRow="align"
+            app:flRowSpacing="8dp"
+            app:layout_constraintLeft_toRightOf="@id/gForDetails"
+            app:layout_constraintRight_toLeftOf="@id/gEnd"
+            app:layout_constraintTop_toTopOf="@id/tvSalesPhotos">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/photoConstraint1"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/dashed_border">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/upl1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/upld"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/photo1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/_2sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/cross1"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:scaleType="center"
+                    android:src="@drawable/red_cross"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/photoConstraint2"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/dashed_border">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/upl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/upld"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/photo2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/_2sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/cross2"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:scaleType="center"
+                    android:src="@drawable/red_cross"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/photoConstraint3"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/dashed_border">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/upl3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/upld"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/photo3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/_2sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <ImageView
+                    android:id="@+id/cross3"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:scaleType="center"
+                    android:src="@drawable/red_cross"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.nex3z.flowlayout.FlowLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnSales"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/large_button_size"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/round_button_green"
+            android:minWidth="@dimen/_70sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            app:layout_constraintLeft_toLeftOf="@id/start"
+            app:layout_constraintRight_toLeftOf="@id/end"
+            app:layout_constraintTop_toBottomOf="@id/photoGrid">
+
+
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/ic_putupfotsale"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/bText2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/to_put_up_for_sale"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/i2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

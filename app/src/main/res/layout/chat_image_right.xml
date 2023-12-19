@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageMessageLayout"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/ic_placeholder_user"
+        app:layout_constraintBottom_toBottomOf="@id/messageConstraint"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/messageConstraint" />
+
+
+    <ImageView
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:src="@drawable/chat_corner_right"
+        app:layout_constraintBottom_toBottomOf="@id/messageConstraint"
+        app:layout_constraintEnd_toEndOf="@id/messageConstraint"
+        app:layout_constraintStart_toEndOf="@id/messageConstraint" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/messageConstraint"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:background="@drawable/chat_background_blue"
+        android:maxWidth="@dimen/_180sdp"
+        android:maxHeight="@dimen/_200sdp"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintRight_toLeftOf="@id/userImage"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ozaydin.serkan.com.image_zoom_view.ImageViewZoom
+            android:id="@+id/imageMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/place_holder"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/messageTick"
+        android:layout_width="@dimen/_8sdp"
+        android:layout_height="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:src="@drawable/ic_delivered_tick"
+        app:layout_constraintRight_toRightOf="@id/messageConstraint"
+        app:layout_constraintTop_toTopOf="@id/messageTime"
+        app:layout_constraintBottom_toBottomOf="@id/messageTime"/>
+
+    <TextView
+        android:id="@+id/messageTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:background="@color/transparent"
+        android:fontFamily="@font/roboto_bold"
+        android:text="19-12-2019  14:26 PM"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintRight_toLeftOf="@id/messageTick"
+        app:layout_constraintTop_toBottomOf="@id/messageConstraint" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

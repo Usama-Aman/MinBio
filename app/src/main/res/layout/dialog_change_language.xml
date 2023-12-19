@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@color/white"
+    android:padding="20dp">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <TextView
+        android:id="@+id/dialogText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/select_the_language_you_want_to_use_in_the_app"
+        android:textAlignment="center"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/medium16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gt" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <Button
+        android:id="@+id/frenchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/splashColor"
+        android:fontFamily="@font/roboto_bold"
+        android:padding="2dp"
+        android:text="@string/french"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/g1"
+        app:layout_constraintTop_toBottomOf="@id/dialogText" />
+
+    <Button
+        android:id="@+id/englishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/signUpButtonColor"
+        android:fontFamily="@font/roboto_bold"
+        android:padding="2dp"
+        android:text="@string/english"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/g1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialogText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

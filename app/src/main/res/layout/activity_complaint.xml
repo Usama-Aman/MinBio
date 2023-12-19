@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/ge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/toolBarGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.13" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbarConstraint"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/toolBarGuideline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/splashColor">
+
+                <ImageView
+                    android:id="@+id/ivToolbarBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/back"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/headerLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/header_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/complainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/complaint_title"
+            android:textAllCaps="true"
+            android:textColor="@color/signInButtonColor"
+            android:textSize="@dimen/medium18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolBarGuideline" />
+
+
+        <TextView
+            android:id="@+id/tvComplaintOrderNo"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/order_no_complaint"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gs"
+            app:layout_constraintRight_toLeftOf="@id/gm"
+            app:layout_constraintTop_toBottomOf="@id/complainTitle" />
+
+
+        <LinearLayout
+            android:id="@+id/orderNumberLinear"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/border_edit_text"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tvComplaintOrderNo"
+            app:layout_constraintLeft_toRightOf="@id/gm"
+            app:layout_constraintRight_toLeftOf="@id/ge"
+            app:layout_constraintTop_toTopOf="@id/tvComplaintOrderNo">
+
+
+            <com.vic.vicwsp.Controllers.Helpers.CustomSearchableSpinner
+                android:id="@+id/complaintOrderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvItems"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/items_complaint"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gs"
+            app:layout_constraintRight_toLeftOf="@id/gm"
+            app:layout_constraintTop_toBottomOf="@id/tvComplaintOrderNo" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemsConstraintSpinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/border_edit_text"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tvItems"
+            app:layout_constraintLeft_toRightOf="@id/gm"
+            app:layout_constraintRight_toLeftOf="@id/ge"
+            app:layout_constraintTop_toTopOf="@id/tvItems">
+
+            <com.vic.vicwsp.Controllers.Helpers.CustomSearchableSpinner
+                android:id="@+id/t"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/_15sdp"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+            <TextView
+                android:id="@+id/itemsComplaintText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvComplaint"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/complaint_complaint"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gs"
+            app:layout_constraintRight_toLeftOf="@id/gm"
+            app:layout_constraintTop_toBottomOf="@id/tvItems" />
+
+        <LinearLayout
+            android:id="@+id/complaintLinear"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/border_edit_text"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tvComplaint"
+            app:layout_constraintLeft_toRightOf="@id/gm"
+            app:layout_constraintRight_toLeftOf="@id/ge"
+            app:layout_constraintTop_toTopOf="@id/tvComplaint">
+
+
+            <com.vic.vicwsp.Controllers.Helpers.CustomSearchableSpinner
+                android:id="@+id/complaintSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/comment_complaint"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gs"
+            app:layout_constraintRight_toLeftOf="@id/gm"
+            app:layout_constraintTop_toBottomOf="@id/tvComplaint" />
+
+
+        <EditText
+            android:id="@+id/etComplaintComment"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/border_edit_text"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="start"
+            android:hint="@string/hint_comments_complaint"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toRightOf="@id/gm"
+            app:layout_constraintRight_toLeftOf="@id/ge"
+            app:layout_constraintTop_toTopOf="@id/tvComment" />
+
+
+        <com.nex3z.flowlayout.FlowLayout
+            android:id="@+id/photoGrid"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:flChildSpacing="auto"
+            app:flChildSpacingForLastRow="align"
+            app:flRowSpacing="8dp"
+            app:layout_constraintRight_toRightOf="@id/ge"
+            app:layout_constraintTop_toBottomOf="@id/etComplaintComment">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/photoConstraint1"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/dashed_border">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/upl1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/upld"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/photo1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/_2sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/cross1"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:scaleType="center"
+                    android:src="@drawable/red_cross"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/photoConstraint2"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/dashed_border">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/upl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/upld"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/photo2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/_2sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/cross2"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:scaleType="center"
+                    android:src="@drawable/red_cross"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/photoConstraint3"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/dashed_border">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/upl3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/upld"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/photo3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="@dimen/_2sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <ImageView
+                    android:id="@+id/cross3"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:scaleType="center"
+                    android:src="@drawable/red_cross"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.nex3z.flowlayout.FlowLayout>
+
+        <ImageView
+            android:id="@+id/complaintSend"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:src="@drawable/ic_support_send"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/gc"
+            app:layout_constraintTop_toBottomOf="@id/photoGrid" />
+
+
+        <ImageView
+            android:id="@+id/complaintCross"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:src="@drawable/ic_cross_support"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/gc"
+            app:layout_constraintTop_toBottomOf="@id/photoGrid" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

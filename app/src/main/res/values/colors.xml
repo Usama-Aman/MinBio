@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#0a3a52</color>
+    <color name="splashColor">#0a3a52</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="edittextHintColor">#a3a3a3</color>
+    <color name="signInButtonColor">#0a3a52</color>
+    <color name="signUpTextColor">#0a3a52</color>
+    <color name="signUpButtonColor">#50a936</color>
+    <color name="labelColor">#2c2c2c</color>
+    <color name="edittextBoderColor">#9c9c9c</color>
+    <color name="catalogueBackground">#ededed</color>
+    <color name="bottomNavigationUnselectedColor">#b6b6b6</color>
+    <color name="star_background">#e7e7e7</color>
+    <color name="pay_blue">#dff2ff</color>
+    <color name="pay_pink">#f6edd7</color>
+    <color name="pay_sea_green">#dcf8e4</color>
+    <color name="pay_purple">#ededed</color>
+    <color name="pay_cream">#f4f2c0</color>
+    <color name="tickerBackground">#242424</color>
+    <color name="blurry">#dde1e4</color>
+    <color name="trackOrderHeaderBackground">#f6f6f6</color>
+    <color name="notification_topLayout_background">#f7f7f7</color>
+    <color name="orderDetailLightRed">#fff4f4</color>
+
+
+    <color name="chatMessageGreyBackground">#e6e6e6</color>
+    <color name="chatScreenBackground">#f9f9f9</color>
+    <color name="chatScreenTypeMessageBorder">#eeeeee</color>
+
+
+
+    <color name="complaintScreenItemBorder">#ECECEC</color>
+    <color name="complaintItemTextColor">#929292</color>
+
+</resources>

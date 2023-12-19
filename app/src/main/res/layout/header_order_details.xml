@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+
+    <TextView
+        android:id="@+id/tvDetailNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:text="@string/order_number"
+        android:textAlignment="textStart"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOrderDetailNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvDetailNum"
+        app:layout_constraintLeft_toRightOf="@id/guideline3"
+        app:layout_constraintRight_toLeftOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/tvDetailNum" />
+
+    <TextView
+        android:id="@+id/tvDetailDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="true"
+        android:text="@string/date_of_the_order"
+        android:textAlignment="textStart"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderDetailNumber" />
+
+    <TextView
+        android:id="@+id/tvDetailDateAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="12-12-12"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvDetailDate"
+        app:layout_constraintLeft_toRightOf="@id/guideline3"
+        app:layout_constraintRight_toLeftOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/tvDetailDate" />
+
+
+    <TextView
+        android:id="@+id/orderDetailCompanyName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="true"
+        android:text="@string/companyNameLabel"
+        android:textAlignment="textStart"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tvDetailDateAnswer" />
+
+    <TextView
+        android:id="@+id/tvOrderDetailCompanyNameAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintBottom_toBottomOf="@id/orderDetailCompanyName"
+        app:layout_constraintLeft_toRightOf="@id/guideline3"
+        app:layout_constraintRight_toLeftOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/orderDetailCompanyName" />
+
+
+    <TextView
+        android:id="@+id/orderDetailNameLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="true"
+        android:text="@string/orderDetailName"
+        android:textAlignment="textStart"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/orderDetailCompanyName" />
+
+    <TextView
+        android:id="@+id/tvOrderDetailName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintBottom_toBottomOf="@id/orderDetailNameLabel"
+        app:layout_constraintLeft_toRightOf="@id/guideline3"
+        app:layout_constraintRight_toLeftOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/orderDetailNameLabel" />
+
+    <TextView
+        android:id="@+id/orderDetailAddressLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="true"
+        android:text="@string/orderDetailAddress"
+        android:textAlignment="textStart"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderDetailName" />
+
+    <TextView
+        android:id="@+id/tvOrderDetailAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline3"
+        app:layout_constraintRight_toLeftOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/orderDetailAddressLabel" />
+
+    <TextView
+        android:id="@+id/orderDetailProvinceLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="true"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/guideline3"
+        app:layout_constraintRight_toLeftOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderDetailAddress" />
+
+    <TextView
+        android:id="@+id/tvOrderDetailProvince"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="true"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/guideline3"
+        app:layout_constraintRight_toLeftOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/orderDetailProvinceLabel" />
+
+    <TextView
+        android:id="@+id/orderDetailPhoneNumberLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/orderDetailTelephone"
+        android:textAlignment="textStart"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderDetailAddress" />
+
+    <TextView
+        android:id="@+id/tvOrderDetailPhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintBottom_toBottomOf="@id/orderDetailPhoneNumberLabel"
+        app:layout_constraintLeft_toRightOf="@id/guideline3"
+        app:layout_constraintRight_toLeftOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/orderDetailPhoneNumberLabel" />
+
+    <TextView
+        android:id="@+id/orderDetailEmailLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/orderDetailEmail"
+        android:textAlignment="textStart"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvOrderDetailEmail"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/tvOrderDetailEmail" />
+
+    <TextView
+        android:id="@+id/tvOrderDetailEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline3"
+        app:layout_constraintRight_toLeftOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderDetailPhoneNumber" />
+
+
+    <TextView
+        android:id="@+id/tvDetailStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="true"
+        android:text="@string/status"
+        android:textAlignment="textStart"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvDeatilStatusAnswer"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/tvDeatilStatusAnswer" />
+
+    <TextView
+        android:id="@+id/tvDeatilStatusAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingStart="5dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="4dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small12sp"
+        app:layout_constraintRight_toRightOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderDetailEmail" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvDeatilStatusAnswer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

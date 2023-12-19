@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayoutNotification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imageConstraint"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_7sdp"
+        android:background="@color/splashColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/notificationImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/place_holder"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_7sdp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintLeft_toRightOf="@id/imageConstraint"
+        app:layout_constraintRight_toLeftOf="@id/notificationDelete"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notificationTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/edittextHintColor"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintLeft_toRightOf="@id/imageConstraint"
+        app:layout_constraintRight_toLeftOf="@id/notificationDelete"
+        app:layout_constraintTop_toBottomOf="@id/notificationTitle" />
+
+
+    <ImageView
+        android:id="@+id/notificationDelete"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_7sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/del"
+        android:padding="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="notificationTime,imageConstraint,notificationDelete" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/edittextBoderColor"
+        app:layout_constraintTop_toBottomOf="@id/b" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,570 @@
+<resources>
+
+    <string name="places_api_billing_key" translatable="false">AIzaSyAald9D0wdy86pmbTX1vWc9KMc-FXx3wzQ</string>
+    <string name="mapbox_access_token" translatable="false">pk.eyJ1IjoidXNhbWEtYW1hbiIsImEiOiJjazU1NGtyY2QwYTZiM2VtcW9wamQ3NmRkIn0.owDuMMZwfgXLED5Hry17yw</string>
+    <string name="stripe__key" translatable="false">pk_live_K9xMzsJIVL58G0I9WBLvgtXQ006zizbseE</string>
+    <string name="test_stripe__key" translatable="false">pk_test_51H06jcG8n0P9fHSa9E2Ji6Nz6crrvC5307J7Y1YyHhVv7kTKCQZAflCMWnDgYr9DS0kr9IOH6WbgvWhv5dRsXGMK00OcnRgJsr</string>
+
+
+    <!--    Splash Screen-->
+    <string name="parnership">Parnership</string>
+
+    <!--                                Sign In Screen                                                    -->
+    <string name="sign_in_title">Connection</string>
+    <string name="SignInEmail">Email</string>
+    <string name="SignInPassword">Password</string>
+    <string name="signInToLogIn">Login</string>
+    <string name="SignInForgotYourPassword">Forgot your password?</string>
+    <string name="signInDontHaveAnAccount">Don\'t have an account?</string>
+    <string name="signInRegisterNow">Register now</string>
+    <string name="signInEnable_biometric_login">Biometric login</string>
+    <!--                                    Validation Messages -->
+    <string name="signInErrorMessageEnterEmail">Please enter email address.</string>d
+    <string name="signInErrorMessageEnterPassword">Please enter password</string>
+    <string name="signInTouch_rear_sensor">Touch your rear sensor to login using finger print.</string>
+    <string name="signInErrorMessagePlease_login_at_least_one_time">Please log in at least one time to use finger print</string>
+
+
+    <!--                                 Register Screen        -->
+    <string name="register">Register</string>
+    <string name="SignUpName">First Name</string>
+    <string name="SignUpLastName">Last Name</string>
+    <string name="SignUpEmail">Email</string>
+    <string name="SignUpTelephone">Phone Number</string>
+    <string name="SignUpSirenNo">Siren Number</string>
+    <string name="SignUpCompanyName">Company</string>
+    <string name="SignUpKbisPicture">KBIS</string>
+    <string name="SignUpIdPicture">ID</string>
+    <string name="signUpPassword">Password</string>
+    <string name="SignUpConfirmPassword">Confirm Password</string>
+    <string name="SignUpCreateMyAccount">Register now</string>
+    <string name="SignUpAlreadyHaveAnAccount">Already have an account?</string>
+    <string name="signUpLoginNow"> Login now</string>
+    <string name="SignUPToLogIn">To Log In</string>
+    <!--                                    Validation Messages -->
+    <string name="SignUpErrorMessageEnter_name">Please enter name</string>
+    <string name="SignUpErrorMessageEnterLastName">Please enter last name</string>
+    <string name="SignUpErrorMessageInvalidEmail">Email is not valid</string>
+    <string name="SignUpErrorMessageEnterEmail">Please enter email address.</string>d
+    <string name="SignUpErrorMessageEnterPassword">Please enter password</string>
+    <string name="SignUpErrorMessageEnter_password_confirmation">Please enter confirm password</string>
+    <string name="SignUpErrorMessagePlease_enter_phone_number">Please enter phone number</string>d
+    <string name="SignUpErrorMessageEnter_company_name">Please enter company name</string>
+    <string name="SignUpErrorMessageEnter_siret_number">Please enter siret number</string>
+    <string name="SignUpErrorMessageSiren_numer_must_be_equal_to_9">Siret number must be equal to 9</string>
+    <string name="SignUpErrorMessagePlease_add_kbis_image_msg">Please add KBIS</string>
+    <string name="SignUpErrorMessagePlease_add_id_image_msg">Please add ID</string>
+    <string name="SignUpErrorMessagePassword_length">The password must be atleast 8 characters</string>
+    <string name="SignUpErrorMessagePassword_not_same">Confirm password does not match.</string>
+    <string name="SignUpAcceptTermsText">I accept the terms and conditions</string>
+    <string name="signUp_error_privacy">Please accept terms and condition.</string>
+
+
+    <!--                                 Forgot Password Screen-->
+    <string name="forgotPasswordTitle">Forgot Password</string>
+    <string name="forgotPasswordEmailOrPhone">Email or Mobile number </string>
+    <string name="forgotPasswordSend_me">Send</string>
+    <string name="forgotPasswordFormatNote">Note: Mobile number format must be like +33109758351</string>
+    <!--                                    Validation Messages -->
+    <string name="forgotPasswordErrorMessageEnterEmail">Please enter email address or mobile number.</string>
+
+
+    <!--                                Reset Password   -->
+    <string name="reset_password">Reset Password</string>
+    <string name="OTP">OTP</string>
+    <string name="resetPasswordNewPassword">New Password</string>
+    <string name="resetPasswordConfirmPassword">Confirm Password</string>
+    <string name="reset">Reset Password</string>
+    <!--                                    Validation Messages -->
+    <string name="resetPasswordErrorMessagePlease_enter_the_verification_code">Please enter the verification code</string>
+    <string name="resetPasswordErrorMessageEnterPassword">Please enter password</string>
+    <string name="resetPasswordErrorMessageEnter_password_confirmation">Please enter confirm password</string>
+    <string name="resetPasswordErrorMessagePassword_not_same">Confirm password does not match.</string>
+
+
+    <!--                                  OTP Confirmation                                  -->
+    <string name="OtpConfirmationTitle">Confirmation</string>
+    <string name="OtpConfirmationMessage">A confirmation SMS has just been sent to you to validate your account. Please enter the 4 digits:</string>
+    <string name="OtpConfirmationErrorMessageYou_have_not_received_the_sms">You have not received the SMS?</string>
+    <string name="OtpConfirmationSendMeBack">Send</string>
+    <string name="OtpConfirmationToLogIn">To Log In</string>
+    <!--                                    Validation Messages -->
+    <string name="OtpConfirmationErrorMessagePlease_enter_the_verification_code">Please enter the verification code</string>
+
+
+    <!--                               Email Confirmation Screen -->
+    <string name="EmailConfirmationTitle">Confirmation</string>
+    <string name="EmailConfirmationMessage">A confirmation email has been sent to you to validate your account. Please consult your mailbox and follow the indicated instructions.</string>
+    <string name="EmailConfirmationErrorMessageYou_have_not_received_the_mail">You have not received the mail?</string>
+    <string name="emailConfirmationSendMeBack">Send</string>
+    <string name="EmailConfirmationToLogIn">To Log In</string>
+
+
+    <!--                                Main Screen Bottom Sections -->
+    <string name="catalog">Catalog</string>
+    <string name="research">Search</string>
+    <string name="orders">Orders</string>
+    <string name="account">Account</string>
+    <string name="my_products">My Products</string>
+    <!--                                  Catalog Section Categories Name                               -->
+    <string name="favorites">Favorites</string>
+    <string name="bio">Bio</string>
+
+
+    <!--                                    Product list Screen -->
+    <string name="from">from</string>
+    <string name="productListMerchants">Merchants</string>
+    <string name="productListMerchant">Merchant</string>
+
+
+    <!--                                    Product Detail Screen -->
+    <string name="productDetailFrom">from</string>
+    <string name="you_have_stock">You have stock?</string>
+    <string name="marchants">Merchants</string>
+    <string name="marchant">Merchant</string>
+    <string name="to_sell">To sell</string>
+    <string name="buy">Buy</string>
+    <string name="product_has_no_seller">This Product has no Merchant.</string>
+    <string name="you_are_not_marchant">Sorry you are not a merchant… Only merchants can sell products</string>
+
+
+    <!--                                    Purchase Form Screen  -->
+    <string name="purchase_form">PURCHASE FORM</string>
+    <string name="purchaseFrom">from</string>
+    <string name="puchaseFormProduct_from_organic_farming">Product from organic farming</string>
+    <string name="the_product_comes_from_organic_farming">The product comes from organic farming.</string>
+    <string name="the_seller_is_open_to_negotiation">The seller is open to negotiation.</string>
+    <string name="purchaseFormSellerChoice">Seller\'s Choice</string>
+    <string name="purchaseFormSeller">Seller</string>
+    <string name="purchaseFormNote">Note</string>
+    <string name="purchaseFormPrice">Price</string>
+    <string name="purchaseFormInventory_of_vendor">Inventory  of vendor: %s</string>
+    <string name="purchaseFormPerKg">per %s</string>
+
+
+    <!--                                    Buying Screen   -->
+    <string name="buyingFrom">from</string>
+    <string name="is_the_minimum_you_can_buy"> is the minimum you can buy</string>
+    <string name="subProductSize">Size : %s</string>
+    <string name="subProductClass">Class : %s</string>
+    <string name="subProductPrice">Price/%s : </string>
+    <string name="select_quantity">Select Quantity</string>
+    <string name="desired_quantity">Desired Quantity</string>
+    <string name="buyingPerUnit">per %s</string>
+    <string name="buyingTotalPrice">Total Price</string>
+    <string name="do_you_want_to_negotiate">Do you want to negotiate?</string>
+    <!--                                    Validation Messages-->
+    <string name="not_in_stock">Not in Stock</string>
+    <string name="this_seller_does_not_have_enough_stock">This seller does not have enough stock</string>
+
+
+    <!--                                 Negotiation Screen    -->
+    <string name="negoTitle">Summary</string>
+    <string name="negoProduct">Product</string>
+    <string name="negoQuantity">Quantity</string>
+    <string name="negoPrice">Price</string>
+    <string name="negoTotalPrice">Total Price</string>
+    <string name="negoSend_my_proposal">Send my proposal</string>
+    <string name="negoAdd_address">Delivery address</string>
+    <string name="you_have">You have</string>
+    <string name="x_tries"> tries left in </string>
+    <string name="in_minutes"> minutes</string>
+    <string name="le_vender">The seller</string>
+    <string name="open_to_negotiate">is open to negotiation</string>
+    <string name="order_has_been_cancelled">Order has been cancelled.</string>
+    <string name="nego_delivery_charges">Delivery Charges</string>
+    <string name="yourPrice">Your price:</string>
+    <string name="proposalPrice">Proposal:</string>
+    <string name="product_proposal">Product Proposal</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="cancel_and_go_back_to_orders">Cancel and go back to orders</string>
+    <string name="negoDestination">Destination</string>
+    <string name="negoPriceErrorMessage">Please enter price</string>
+    <string name="nego_add_shipping_address">Please add delivery address</string>
+
+
+    <!--                                Cart Screen   -->
+    <string name="cartTitle">Basket</string>
+    <string name="cartProduct">Product</string>
+    <string name="cartQuantity">Quantity</string>
+    <string name="cartPrice">Price</string>
+    <string name="carttotal_ht">Total HT</string>
+    <string name="carttva">VAT</string>
+    <string name="carttotal_tcc">Total TTC</string>
+    <string name="cartAdd_address">Delivery address</string>
+    <string name="select_a_delivery_type">Select a delivery type</string>
+    <string name="shared_delivery">Shared delivery</string>
+    <string name="fast_delivery">Fast delivery</string>
+    <string name="pick_up">Pick up</string>
+    <string name="discount_on_product">Discount %s</string>
+    <string name="confirm_cart">Validate the basket</string>
+    <string name="cartDiscount">Discount</string>
+    <string name="cartSoldBy">Sold by</string>
+    <string name="cart_delivery_charges">Delivery Charges</string>
+    <string name="do_you_want_to_take_coverage">Do you want to take coverage?</string>
+    <string name="cartDestination">Destination</string>
+    <string name="cartAddressText">Address</string>
+    <string name="cartDateText">Delivery Date</string>
+    <!--                                Validation Message  -->
+    <string name="cartDeleteProduct">Are you sure you want to delete the product?</string>
+
+    <!--                                  Payment Screen -->
+    <string name="paymentTitle">Payment</string>
+    <string name="paymentProduct">Product</string>
+    <string name="paymentQuantity">Quantity</string>
+    <string name="paymentPrice">Price</string>
+    <string name="paymentTotalPrice">Total Price</string>
+    <string name="pay_by_credit_card">Pay by credit card</string>
+    <string name="cb_visa_mastercard">CB, Visa, Mastercard</string>
+    <string name="pay_with_my_tokens">Pay with my tokens</string>
+    <string name="pay_in_cash_at_the_reception">Pick up at the reception</string>
+    <string name="make_a_sepa_direct_debit">Make a SEPA Direct Debit</string>
+    <string name="payment_ok">Your payment is approved.</string>
+
+
+    <!--                                 Coverage Screen   -->
+    <string name="coverage">Coverage</string>
+    <string name="amountGreatorThanCoverage">You have received %1s overdraft amount from VICWSP. Your remaining amount to pay is %2s . Please pay remaining amount with below given option.</string>
+    <string name="amountLessThanCoverage">You have received %s overdraft amount from VICWSP. Please click below button to complete order.</string>
+    <string name="coveragePlaceOrder">Place Order</string>
+
+
+    <!--                                    Stripe Screen-->
+    <string name="enter_details">Enter Details</string>
+    <string name="stripe_done">Done</string>
+    <!--                            Validate Messages -->
+    <string name="invalid_card">Invalid Card</string>
+
+
+    <!--                                        Research Screen    -->
+    <string name="search_a_product">Search a product</string>
+    <string name="keywords">Keywords</string>
+    <string name="eggplant_apple_batavia">Eggplant, apple, batavia …</string>
+    <string name="researchVendor">Vendor</string>
+    <string name="researchOrigin">Origin</string>
+    <string name="researchPrice">Price</string>
+    <string name="researchSelectOrigin">Select Origin</string>
+    <string name="researchSelectMerchant">Select Vendour</string>
+    <string name="max_price_greater">Maximum price should be greater than minimum price</string>
+    <string name="min_price_less">Minimum price should be less than maximum price</string>
+    <string name="all">All</string>
+    <string name="no_products">No Product</string>
+    <string name="max">Max</string>
+    <string name="min">Min</string>
+    <string name="researchButton">Search</string>
+
+
+    <!--                                Account Settings Screen -->
+    <string name="account_settings">Account Settings</string>
+    <string name="accountSettingsCompany">Company</string>
+    <string name="accountSettingSiret">Siret</string>
+    <string name="accountSettingsFirstName">First Name</string>
+    <string name="accountSettingsLastName">Last Name</string>
+    <string name="accountSettingsTelephone">Telephone</string>
+    <string name="accountSettingsEmail">Email </string>
+    <string name="accountSettingsAddress">Address</string>
+    <string name="auto_nego_approved">Auto Nego Approved</string>
+    <string name="accountSettingsKbis_picture">KBIS</string>
+    <string name="accountSettingsId_picture">ID</string>
+    <string name="accountSettingsPassword">Password</string>
+    <string name="accountSettingsConfirmationPassword">Confirmation</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="version">Version  </string>
+    <string name="accountPrivacyText">I have read and accept the terms and conditions</string>
+    <!--                            Validation Messages -->
+    <string name="AccountSettingsErrorMessageEnter_name">Please enter name</string>
+    <string name="AccountSettingsErrorMessageInvalidEmail">Email is not valid</string>
+    <string name="AccountSettingsErrorMessageEnterEmail">Please enter email address.</string>d
+    <string name="AccountSettingsErrorMessageEnterPassword">Please enter password</string>
+    <string name="AccountSettingsErrorMessageEnter_password_confirmation">Please enter confirm password</string>
+    <string name="AccountSettingsErrorMessagePlease_enter_phone_number">Please enter phone number</string>
+    <string name="AccountSettingsErrorMessageEnter_company_name">Please enter company name</string>
+    <string name="AccountSettingsErrorMessageEnter_siret_number">Please enter siret number</string>
+    <string name="AccountSettingsErrorMessageEnter_pre_name">Please enter last name</string>
+    <string name="AccountSettingsErrorMessageSiren_numer_must_be_equal_to_9">Siret number must be equal to 9</string>
+    <string name="AccountSettingsErrorMessagePlease_add_kbis_image_msg">Please add KBIS image</string>
+    <string name="AccountSettingsErrorMessagePlease_add_id_image_msg">Please add ID image</string>
+    <string name="AccountSettingsErrorMessagePassword_length">The password must be atleast 6 characters</string>
+    <string name="AccountSettingsErrorMessagePassword_not_same">Confirm password does not match.</string>
+    <string name="AccountSettingsCurrent_language_english">Your current language is already English</string>
+    <string name="AccountSettingsCurrent_language_french">Your current language is already French</string>
+    <!--                                    when Language is changed -->
+    <string name="select_the_language_you_want_to_use_in_the_app">Select the language you want to use in the app.</string>
+    <string name="AccountSettingChangeLanguageButton">Change Language</string>
+    <string name="french">French</string>
+    <string name="english">English</string>
+
+
+    <!--                                Add/Edit Product Screen -->
+    <string name="productName">Name</string>
+    <string name="inventory">Inventory </string>
+    <string name="addEditPerUnit">per %s</string>
+    <string name="addEditProductFrom">from</string>
+    <string name="productPrice">Price </string>
+    <string name="sale_by_case_of">Sale from minimum of</string>
+    <string name="product_from_organic_farming">Product from organic farming</string>
+    <string name="i_am_open_to_negotiation">I am open to negotiation.</string>
+    <string name="product_select_size">Select Size</string>
+    <string name="product_select_class">Select Class</string>
+    <string name="product_select_vat">Select Vat</string>
+    <string name="origin">Origin</string>
+    <string name="photos">Photos</string>
+    <string name="productDetails">Details</string>
+    <string name="slect_origin">Select Origin</string>
+    <string name="sales_form">Form of Sale %s</string>
+    <string name="vat">VAT</string>
+    <string name="productDiscount">Discount</string>
+    <string name="threshold_price">Threshold Price</string>
+    <string name="to_put_up_for_sale">To put up for sale</string>
+    <string name="delete_picture">Are you sure you want to delete the picture?</string>
+    <string name="there_is_no_product_please_click_add_button_to_create">There is no product please click add button to create</string>
+    <string name="SalesFormErrorMessagePlease_enter_product_name">Please enter product name</string>
+    <string name="discount_cannot_be_grator_than_100">Discount cannot be greater than 100%</string>
+    <string name="min_price_cannot_be_greater_than_actual_price">Minimum price cannot be greater than or equal to actual price of the product</string>
+    <string name="max_price_cannot_be_less_than_min_price">Maximum price cannot be less than minimum price</string>
+    <string name="vat_cannot_be_grator_than_100">Vat cannot be greater than 100% </string>
+    <string name="add_one_picture_of_product">Please add one picture of the product</string>
+    <string name="SalesFormErrorMessagePleaseEnterQuantity">Please enter quantity</string>
+    <string name="SalesFormErrorMessageQuantityCantBeZero">Quantity cannot be 0</string>
+    <string name="SalesFormErrorMessagePleaseEnterPrice">Please enter price</string>
+    <string name="SalesFormErrorMessagePriceCantBeZero">Price cannot be 0</string>
+    <string name="SalesFormErrorMessagesaleCaseCantBeZero">Sale case cannot be zero</string>
+    <string name="SalesFormErrorMessageplease_enter_product_detail">Please enter product detail</string>
+    <string name="SalesFormErrorMessageEnterSalesCaseAmount">Please enter sales case amount</string>
+    <string name="SalesFormErrorMessageSaleCaseCantBeZero">Sales case cannot be 0</string>
+    <string name="SalesFormErrorMessageQuantityShouldMatchIwthBox">The product quantity and sale case should match.</string>
+    <string name="SalesFormErrorMessageplease_enter_min_price">Please enter min price</string>
+    <string name="SalesFormErrorMessageMin_price_cant_be_zero">Min price cannot be zero</string>
+
+
+    <!--                                        Orders Screen    -->
+    <string name="my_orders">My Orders</string>
+    <string name="n_dot">N.</string>
+    <string name="date">Date</string>
+    <string name="amount_ht">Amount HT</string>
+    <string name="order_status">Status</string>
+    <string name="order_details">Details</string>
+    <string name="past">SENT</string>
+    <string name="received">RECEIVED</string>
+    <string name="order_overdraft">OVERDRAFT</string>
+
+
+    <!--                                OrderDetail Screen  -->
+    <string name="order_detail_title">Order Detail</string>
+    <string name="order_number">Order number</string>
+    <string name="date_of_the_order">Date of the order</string>
+    <string name="orderDetailName">Name</string>
+    <string name="orderDetailEmail">Email</string>
+    <string name="orderDetailAddress">Address</string>
+    <string name="orderDetailTelephone">Telephone</string>
+    <string name="rate_the_order">Rate the order</string>
+    <string name="navigate_order">Track the order</string>
+    <string name="overdraft_message_order_detail">You have %1s overdraft amount pending for this order. You have to pay till %2s . If you want to pay click on pay button to pay.</string>
+    <string name="status">Status</string>
+    <string name="details">Details</string>
+    <string name="province">Province</string>
+    <string name="companyNameLabel">Company Name</string>
+    <string name="orderDetailProduct">Product</string>
+    <string name="orderDetailQuantity">Quantity</string>
+    <string name="orderDetailPrice">Price</string>
+    <string name="total_ht">Total HT</string>
+    <string name="tva">VAT</string>
+    <string name="total_tcc">Total TTC</string>
+    <string name="soldBy">Sold by</string>
+    <string name="discount">Discount</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="pay_the_coverage">Pay order</string>
+
+
+    <!--                                Orders Status Don't Change these ... -->
+    <string name="negotitiationStatus">In-nego</string>
+    <string name="UnpaidStatus">Unpaid</string>
+    <string name="PaidStatus">Paid</string>
+    <string name="PendingStatus">Pending</string>
+    <string name="NegoapprovedStatus">Nego-approved</string>
+    <string name="CompleteStatus">Complete</string>
+    <string name="PreOrderStatus">Pre-order</string>
+    <string name="Pending_payment">Pending payment</string>
+    <string name="CancelledStatus">Cancelled</string>
+    <string name="ExpiredStatus">Expired</string>
+    <string name="DeclineStatus">Decline</string>
+    <string name="RejectedStatus">Rejected</string>
+    <string name="NegoRejectedStatus">Nego-rejected</string>
+
+
+    <!--                                               Maps Screen After Cart         -->
+    <string name="delivery_address_is_ok">Delivery address is ok</string>
+
+
+    <!--                                    Track Order Screen -->
+    <string name="deliveryPending">Pending</string>
+    <string name="deliveryAccepted">Accepted</string>
+    <string name="deliveryCompleted">Completed</string>
+    <string name="companyNameLabelTrackScreen">Company Name</string>
+    <string name="itemsLabel">Items</string>
+    <string name="rateLabel">Rate</string>
+    <string name="viewMapLabel">View</string>
+    <string name="driverNameLabel">Driver Name</string>
+    <string name="orderNumberLabel">Order No: %s</string>
+    <string name="chat">Chat</string>
+
+
+    <!--                                    On Chart-->
+    <string name="we_advise_you_to_buy_today">We advise you to buy today</string>
+    <string name="current_price">current price:</string>
+    <string name="average_price_year">average price year:</string>
+    <string name="price_trend">Price trend</string>
+    <string name="year">year</string>
+    <string name="month">month</string>
+    <string name="week">week</string>
+    <string name="average_price_month">average price month:</string>
+    <string name="average_price_week">average price week:</string>
+
+    <!--                                   Rating Screen -->
+    <string name="pricing">Pricing</string>
+    <string name="product_quality">Product quality</string>
+    <string name="product_availability">Product availability</string>
+    <string name="relation_with_buyer">Relation with buyer</string>
+    <string name="comments">Comments</string>
+    <string name="driver_rating">Rating</string>
+    <string name="trust_relation">Trust relation</string>
+    <string name="your_compliments">Your compliments</string>
+    <string name="enter_compliment">Please write your compliments for better assistance.</string>
+    <string name="rate_the_driver">Rate the driver </string>
+
+
+    <!--                                        Notification belt-->
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_clearAll">Clear All</string>
+
+
+    <!--                                General Strings    (Error messages or just strings)                                                -->
+    <string name="app_name">MINBIO</string>
+    <string name="appVersionSplash">v1.20</string>
+    <string name="loading">Loading</string>
+    <string name="loading_please_wait">Loading. Please wait…</string>
+    <string name="something_is_not_right">Something isn\'t right.</string>
+    <string name="please_enter_details">Please enter details</string>
+    <string name="per_kg">per %s</string>
+    <string name="price">Price</string>
+    <string name="priceperkg">Price/%s</string>
+    <string name="currently_there_is_no_data">Currently there is no data.</string>
+    <string name="back_pressed_again">Please click BACK again to exit</string>
+    <string name="added_to_cart">you have added %s in your basket</string>
+    <string name="total_price">Total Price</string>
+    <string name="delete_product">Are you sure you want to delete the product?</string>
+    <string name="exit_app">Are you sure you want to exit?</string>
+    <string name="stockIsNotAvailable">Merchants doesn\'t have stocks according to your need. Rest of your order is placed.</string>
+    <string name="order_placed">Your order is placed.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="fcm_token">FCM Token: %s</string>
+    <string name="select_all">Select All</string>
+    <string name="close_spinner">Close</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="done">Done</string>
+    <string name="permission_denied">Permission denied.</string>
+    <string name="add_shipping_address">Please add delivery address</string>
+    <string name="ok">OK</string>
+    <string name="percentage">%</string>
+    <string name="confirm">Confirm</string>
+    <string name="cart_is_empty">Cart is empty</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="add_products">Add products</string>
+    <string name="cancel">Cancel</string>
+    <string name="radiation_status_is_not_good">"You can not do the business as your status is not good to do business"</string>
+
+
+    <!--                                        Chat  screen-->
+    <string name="hint_type_your_message">Type your message</string>
+    <string name="slide_to_cancel">Slide To Cancel</string>
+    <string name="chatOrderNumber">Order No : %s</string>
+
+    <!--                                    Complaint Screen    -->
+    <string name="complaint_title">Complaint</string>
+    <string name="order_no_complaint">Order No</string>
+    <string name="items_complaint">Items</string>
+    <string name="complaint_complaint">Complaint</string>
+    <string name="comment_complaint">Comment</string>
+    <string name="complaint_dialog_title">Select Complaint</string>
+    <string name="select_order_no_complaint">Select Order No</string>
+    <string name="select_items_complaint">Select Items</string>
+    <string name="select_complaint_type_complaint">Select Complaint Type</string>
+    <string name="enter_comments_complaint">Please enter comments</string>
+    <string name="select_items_complaint_error">Please select items</string>
+    <string name="hint_comments_complaint">Enter Comments </string>
+
+    <!--                                      Support Screen     -->
+    <string name="support_title">Support</string>
+    <string name="topic_support">Topic</string>
+    <string name="email_support">Email</string>
+    <string name="issue_support">Issue</string>
+    <string name="hint_issue_support">"Enter issue"</string>
+    <string name="select_topic_support">Select Topic</string>
+    <string name="enter_issue_support">Please enter your issue</string>
+    <string name="are_you_to_call">Are you sure you want to call?</string>
+    <string name="something_s_wrong_let_us_know">Something\'s wrong let us know</string>
+
+
+    <!--                                        Bank Screen  -->
+    <string name="bank_detail">Bank Details</string>
+    <string name="good">Good</string>
+    <string name="bank_address">Bank address</string>
+    <string name="bank_state">State</string>
+    <string name="upload_bank_detail_file">Upload bank details file</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="bank_city">City</string>
+    <string name="bank_zip">Zip</string>
+    <string name="bank_account_name">Account name</string>
+    <string name="bank_account_number">Account no</string>
+    <string name="bank_routing_code">Routing code</string>
+    <string name="bank_swift_number">Swift number</string>
+    <string name="bank_iban">IBAN</string>
+    <string name="bank_first_name">First name</string>
+    <string name="bank_last_name">Last Name</string>
+    <string name="bank_number">Number</string>
+    <string name="bank_company">Company</string>
+    <string name="bank_slect_origin">Select Origin</string>
+    <string name="bank_country">Country</string>
+    <string name="bank_submit">Submit</string>
+    <string name="bank_btn_save">Save</string>
+    <string name="bank_error_enter_name">Please enter bank name</string>
+    <string name="bank_error_enter_bank_detail_file">Please upload bank detail file</string>
+    <string name="bank_error_enter_country">Please enter country name</string>
+    <string name="bank_error_enter_bank_address">Please enter bank address</string>
+    <string name="bank_error_enter_state">Please enter state</string>
+    <string name="bank_error_enter_city">Please enter city</string>
+    <string name="bank_error_enter_zip">Please enter zip code</string>
+    <string name="bank_error_enter_account_name">Please enter account name</string>
+    <string name="bank_error_enter_account_number">Please enter account number</string>
+    <string name="bank_error_enter_routing_code">Please enter routing code</string>
+    <string name="bank_error_enter_swift_number">Please enter swift number</string>
+    <string name="bank_error_enter_iban">Please enter iban</string>
+    <string name="deliveryPickupDate">Delivery/Pick-up Date</string>
+
+
+    <!--    Complaint Screen    -->
+
+    <string name="msg_please_add_comment_first">Please add comment first</string>
+    <string name="my_complaints">Complain</string>
+    <string name="tvAssigned">Assigned - </string>
+    <string name="complaintType">Type : </string>
+    <string name="complaintOrderNo">Order : </string>
+
+
+    <!--    Support Screen    -->
+    <string name="my_support">Support</string>
+
+    <!--                Save Card Screen   -->
+    <string name="save_card">Save Card</string>
+    <string name="card_holder">Card Holder</string>
+    <string name="expiry">Exp Date</string>
+    <string name="deleteCard">Are you sure you want to delete this card?</string>
+
+    <!--       Credit Notes Screen  -->
+    <string name="credit_notes">Credit Notes</string>
+    <string name="ticket_no">Ticket No</string>
+
+</resources>

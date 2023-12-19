@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/toolBarGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarConstraint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/toolBarGuideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/splashColor">
+
+            <ImageView
+                android:id="@+id/ivToolbarBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:scaleType="center"
+                android:src="@drawable/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/headerLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/supportTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/support_title"
+        android:textAllCaps="true"
+        android:textColor="@color/signInButtonColor"
+        android:textSize="@dimen/medium18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBarGuideline" />
+
+    <TextView
+        android:id="@+id/tvTopic"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="@string/topic_support"
+        android:textAlignment="textStart"
+        android:textColor="@color/labelColor"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintLeft_toRightOf="@id/gs"
+        app:layout_constraintRight_toLeftOf="@id/gm"
+        app:layout_constraintTop_toBottomOf="@id/supportTitle" />
+
+
+    <LinearLayout
+        android:id="@+id/topicsLinear"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="@drawable/border_edit_text"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/tvTopic"
+        app:layout_constraintLeft_toRightOf="@id/gm"
+        app:layout_constraintRight_toLeftOf="@id/ge"
+        app:layout_constraintTop_toTopOf="@id/tvTopic">
+
+
+        <pl.utkala.searchablespinner.SearchableSpinner
+            android:id="@+id/topicsSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/_15sdp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvEmailSupport"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="@string/email_support"
+        android:textAlignment="textStart"
+        android:textColor="@color/labelColor"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintLeft_toRightOf="@id/gs"
+        app:layout_constraintRight_toLeftOf="@id/gm"
+        app:layout_constraintTop_toBottomOf="@id/tvTopic" />
+
+    <EditText
+        android:id="@+id/etSupportEmail"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="@drawable/border_edit_text"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/roboto_regular"
+        android:imeOptions="actionNext"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/labelColor"
+        android:textSize="@dimen/small14sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvEmailSupport"
+        app:layout_constraintLeft_toRightOf="@id/gm"
+        app:layout_constraintRight_toLeftOf="@id/ge"
+        app:layout_constraintTop_toTopOf="@id/tvEmailSupport" />
+
+
+    <TextView
+        android:id="@+id/tvSupportComment"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="@string/issue_support"
+        android:textAlignment="textStart"
+        android:textColor="@color/labelColor"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintLeft_toRightOf="@id/gs"
+        app:layout_constraintRight_toLeftOf="@id/gm"
+        app:layout_constraintTop_toBottomOf="@id/tvEmailSupport" />
+
+
+    <EditText
+        android:id="@+id/etSupportComment"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/border_edit_text"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLines="10"
+        android:hint="@string/hint_issue_support"
+        android:minLines="6"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/labelColor"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintLeft_toRightOf="@id/gm"
+        app:layout_constraintRight_toLeftOf="@id/ge"
+        app:layout_constraintTop_toTopOf="@id/tvSupportComment" />
+
+
+    <ImageView
+        android:id="@+id/supportSend"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_support_send"
+        app:layout_constraintLeft_toLeftOf="@id/gc"
+        app:layout_constraintRight_toRightOf="@id/gc"
+        app:layout_constraintTop_toBottomOf="@id/etSupportComment" />
+
+
+    <ImageView
+        android:id="@+id/supportCross"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/ic_cross_support"
+        app:layout_constraintRight_toLeftOf="@id/supportSend"
+        app:layout_constraintTop_toBottomOf="@id/etSupportComment" />
+
+
+    <ImageView
+        android:id="@+id/supportCall"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_phone_support"
+        app:layout_constraintLeft_toRightOf="@id/supportSend"
+        app:layout_constraintTop_toBottomOf="@id/etSupportComment" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

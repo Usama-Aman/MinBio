@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cartFooter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="20dp">
+
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_margin="20dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <TextView
+        android:id="@+id/tvTotaltHt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:text="@string/carttotal_ht"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small11sp"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/v" />
+
+    <TextView
+        android:id="@+id/tvTotaltHtAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small11sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotaltHt"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/tvTotaltHt" />
+
+    <TextView
+        android:id="@+id/tvTotalDiscount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:text="@string/cartDiscount"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small11sp"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/tvTotaltHtAnswer" />
+
+
+    <TextView
+        android:id="@+id/tvTotalDiscountAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small11sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalDiscount"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/tvTotalDiscount" />
+
+
+    <TextView
+        android:id="@+id/tvTVA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:text="@string/carttva"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small11sp"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalDiscountAnswer" />
+
+
+    <TextView
+        android:id="@+id/tvTVAAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small11sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvTVA"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/tvTVA" />
+
+
+    <TextView
+        android:id="@+id/tvDeliveryCharges"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:text="@string/cart_delivery_charges"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small11sp"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/tvTVAAnswer" />
+
+
+    <TextView
+        android:id="@+id/tvDeliveryChargesAndwer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/small11sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tvDeliveryCharges"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/tvDeliveryCharges" />
+
+
+    <TextView
+        android:id="@+id/tvTotalTTC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:text="@string/carttotal_tcc"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/medium16sp"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/tvDeliveryChargesAndwer" />
+
+    <TextView
+        android:id="@+id/tvTotalTTCAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/medium16sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalTTC"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/tvTotalTTC" />
+
+    <TextView
+        android:id="@+id/btnAddAddress"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:drawableTop="@drawable/ic_destination"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/cartDestination"
+        android:textAlignment="center"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+
+        app:layout_constraintRight_toRightOf="@id/guideline4"
+
+        app:layout_constraintTop_toBottomOf="@id/tvTotalTTCAnswer" />
+
+    <TextView
+        android:id="@+id/btnCalendar"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="0dp"
+        android:drawableTop="@drawable/ic_datepicker"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/deliveryPickupDate"
+        android:textAlignment="center"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAddAddress"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/btnAddAddress" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnConfirmCart"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/large_button_size"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/round_button_green"
+        android:minWidth="@dimen/_70sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/btnAddAddress">
+
+
+        <ImageView
+            android:id="@+id/i2"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/ic_buy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/buyText2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/buyText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/confirm_cart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvCartBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:textColor="@color/signUpButtonColor"
+        android:textSize="@dimen/small11sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/btnConfirmCart"
+        app:layout_constraintRight_toRightOf="@id/btnConfirmCart"
+        app:layout_constraintTop_toBottomOf="@id/btnConfirmCart" />
+
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/outstandingSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/tvCartBottom"
+        app:layout_constraintRight_toRightOf="@id/tvCartBottom"
+        app:layout_constraintTop_toBottomOf="@id/tvCartBottom"
+        app:sb_checked_color="@color/red" />
+
+
+    <TextView
+        android:id="@+id/tvOutstandingSwitchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:singleLine="false"
+        android:text="@string/do_you_want_to_take_coverage"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_11sdp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/outstandingSwitch"
+        app:layout_constraintRight_toRightOf="@id/outstandingSwitch"
+        app:layout_constraintTop_toBottomOf="@id/outstandingSwitch" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tvCartAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/labelColor"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOutstandingSwitchText" />
+
+    <TextView
+        android:id="@+id/tvCartDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/labelColor"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCartAddress" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

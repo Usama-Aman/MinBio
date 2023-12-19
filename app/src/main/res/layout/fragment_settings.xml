@@ -1,0 +1,728 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/catalogueBackground"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="com.vic.vicwsp.Views.Fragments.Settings">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/settingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/account_settings"
+            android:textAllCaps="true"
+            android:textColor="@color/splashColor"
+            android:textSize="@dimen/large22sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="1dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settingsTitle">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/startSettingsGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.08" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/endSettingsGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.92" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/centerSettingsGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.4" />
+
+                <TextView
+                    android:id="@+id/tvBussiness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/accountSettingsCompany"
+                    android:textColor="@color/labelColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/etBussiness"
+                    app:layout_constraintLeft_toLeftOf="@id/centerSettingsGuideline"
+                    app:layout_constraintStart_toEndOf="@id/startSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etBussiness" />
+
+                <EditText
+                    android:id="@+id/etBussiness"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/border_editext_small"
+                    android:fontFamily="@font/roboto_regular"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textColor="@color/edittextBoderColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintLeft_toRightOf="@id/centerSettingsGuideline"
+                    app:layout_constraintRight_toLeftOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivBussiness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+
+                    app:layout_constraintBottom_toBottomOf="@id/etBussiness"
+                    app:layout_constraintLeft_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etBussiness" />
+
+                <TextView
+                    android:id="@+id/tvSiret"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/accountSettingSiret"
+                    android:textColor="@color/labelColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/etSiret"
+                    app:layout_constraintLeft_toLeftOf="@id/centerSettingsGuideline"
+                    app:layout_constraintStart_toEndOf="@id/startSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etSiret" />
+
+                <EditText
+                    android:id="@+id/etSiret"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_editext_small"
+                    android:fontFamily="@font/roboto_regular"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textColor="@color/edittextBoderColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintLeft_toRightOf="@id/centerSettingsGuideline"
+                    app:layout_constraintRight_toLeftOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/etBussiness" />
+
+                <ImageView
+                    android:id="@+id/ivSiret"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+
+                    app:layout_constraintBottom_toBottomOf="@id/etSiret"
+                    app:layout_constraintLeft_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etSiret" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/accountSettingsFirstName"
+                    android:textColor="@color/labelColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/etName"
+                    app:layout_constraintLeft_toLeftOf="@id/centerSettingsGuideline"
+                    app:layout_constraintStart_toEndOf="@id/startSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etName" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_editext_small"
+                    android:fontFamily="@font/roboto_regular"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textColor="@color/edittextBoderColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintLeft_toRightOf="@id/centerSettingsGuideline"
+                    app:layout_constraintRight_toLeftOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/etSiret" />
+
+                <ImageView
+                    android:id="@+id/ivName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/etName"
+                    app:layout_constraintLeft_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etName" />
+
+                <TextView
+                    android:id="@+id/tvPreName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/accountSettingsLastName"
+                    android:textColor="@color/labelColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/etPreName"
+                    app:layout_constraintLeft_toLeftOf="@id/centerSettingsGuideline"
+                    app:layout_constraintStart_toEndOf="@id/startSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etPreName" />
+
+                <EditText
+                    android:id="@+id/etPreName"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_editext_small"
+                    android:fontFamily="@font/roboto_regular"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textColor="@color/edittextBoderColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintLeft_toRightOf="@id/centerSettingsGuideline"
+                    app:layout_constraintRight_toLeftOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/etName" />
+
+                <ImageView
+                    android:id="@+id/ivPreName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/etPreName"
+                    app:layout_constraintLeft_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etPreName" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/accountSettingsTelephone"
+                    android:textColor="@color/labelColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/settingsPhoneLinear"
+                    app:layout_constraintLeft_toLeftOf="@id/centerSettingsGuideline"
+                    app:layout_constraintStart_toEndOf="@id/startSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/settingsPhoneLinear" />
+
+
+                <LinearLayout
+                    android:id="@+id/settingsPhoneLinear"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_editext_small"
+                    android:orientation="horizontal"
+                    android:paddingStart="2dp"
+                    app:layout_constraintLeft_toRightOf="@id/centerSettingsGuideline"
+                    app:layout_constraintRight_toLeftOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/etPreName">
+
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/settingsCCP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:defaultNameCode="Fr"
+                        app:hideNameCode="true"
+                        app:textSize="@dimen/small12sp" />
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/roboto_regular"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/edittextBoderColor"
+                        android:textSize="@dimen/small14sp" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/ivPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/settingsPhoneLinear"
+                    app:layout_constraintLeft_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/settingsPhoneLinear" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/accountSettingsEmail"
+                    android:textColor="@color/labelColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/etEmail"
+                    app:layout_constraintLeft_toLeftOf="@id/centerSettingsGuideline"
+                    app:layout_constraintStart_toEndOf="@id/startSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etEmail" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_editext_small"
+                    android:fontFamily="@font/roboto_regular"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textColor="@color/edittextBoderColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintLeft_toRightOf="@id/centerSettingsGuideline"
+                    app:layout_constraintRight_toLeftOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/settingsPhoneLinear" />
+
+                <ImageView
+                    android:id="@+id/ivEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/etEmail"
+                    app:layout_constraintLeft_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etEmail" />
+
+
+                <TextView
+                    android:id="@+id/AccountAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_editext_small"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:inputType="none"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/edittextBoderColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintLeft_toRightOf="@id/centerSettingsGuideline"
+                    app:layout_constraintRight_toLeftOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/autoNegoSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintRight_toLeftOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/AccountAddress"
+                    app:sb_checked_color="@color/splashColor" />
+
+                <ImageView
+                    android:id="@+id/ivAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/AccountAddress"
+                    app:layout_constraintLeft_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/AccountAddress" />
+
+                <!--            android:imeOptions="actionNext"-->
+
+                <TextView
+                    android:id="@+id/autoNegoLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/auto_nego_approved"
+                    android:textColor="@color/labelColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/autoNegoSwitch"
+                    app:layout_constraintLeft_toLeftOf="@id/startSettingsGuideline"
+                    app:layout_constraintRight_toLeftOf="@id/autoNegoSwitch"
+                    app:layout_constraintTop_toTopOf="@id/autoNegoSwitch" />
+
+
+                <TextView
+                    android:id="@+id/tvAccountAutoNegoAccepted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/accountSettingsAddress"
+                    android:textColor="@color/labelColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/AccountAddress"
+                    app:layout_constraintLeft_toLeftOf="@id/centerSettingsGuideline"
+                    app:layout_constraintStart_toEndOf="@id/startSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/AccountAddress" />
+
+
+                <LinearLayout
+                    android:id="@+id/KbisCon"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_105sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:weightSum="2"
+                    app:layout_constraintLeft_toLeftOf="@id/startSettingsGuideline"
+                    app:layout_constraintRight_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/autoNegoSwitch">
+
+                    <RelativeLayout
+                        android:id="@+id/relTruckPlate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@color/catalogueBackground"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/kbisSettingsTick"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:src="@drawable/tick"
+                                android:visibility="gone"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/kbisImageSettings"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:src="@drawable/upld"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="@string/accountSettingsKbis_picture"
+                                android:textAlignment="center"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/_10sdp"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/kbisImageSettings" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relProfileOfTruckId"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_weight="1">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/catalogueBackground"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/idSettingsTick"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:src="@drawable/tick"
+                                android:visibility="gone"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/idImageSettings"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:src="@drawable/ic_id"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="@string/accountSettingsId_picture"
+                                android:textAlignment="center"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/_10sdp"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/idImageSettings" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/accountSettingsPassword"
+                    android:textColor="@color/labelColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/etPassword"
+                    app:layout_constraintLeft_toLeftOf="@id/centerSettingsGuideline"
+                    app:layout_constraintStart_toEndOf="@id/startSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etPassword" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/border_editext_small"
+                    android:fontFamily="@font/roboto_regular"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textColor="@color/edittextBoderColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintLeft_toRightOf="@id/centerSettingsGuideline"
+                    app:layout_constraintRight_toLeftOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/KbisCon" />
+
+                <ImageView
+                    android:id="@+id/ivPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/etPassword"
+                    app:layout_constraintLeft_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etPassword" />
+
+                <TextView
+                    android:id="@+id/tvPasswordConfirmation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/accountSettingsConfirmationPassword"
+                    android:textColor="@color/labelColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/etPasswordConfirmation"
+                    app:layout_constraintLeft_toLeftOf="@id/centerSettingsGuideline"
+                    app:layout_constraintStart_toEndOf="@id/startSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etPasswordConfirmation" />
+
+                <EditText
+                    android:id="@+id/etPasswordConfirmation"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_editext_small"
+                    android:fontFamily="@font/roboto_regular"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textColor="@color/edittextBoderColor"
+                    android:textSize="@dimen/small14sp"
+                    app:layout_constraintLeft_toRightOf="@id/centerSettingsGuideline"
+                    app:layout_constraintRight_toLeftOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+                <ImageView
+                    android:id="@+id/ivPasswordConfirmation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/etPasswordConfirmation"
+                    app:layout_constraintLeft_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/etPasswordConfirmation" />
+
+
+                <CheckBox
+                    android:id="@+id/privacyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:checked="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/privacyText"
+                    app:layout_constraintLeft_toLeftOf="@id/startSettingsGuideline"
+                    app:layout_constraintTop_toTopOf="@id/privacyText" />
+
+                <TextView
+                    android:id="@+id/privacyText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/accountPrivacyText"
+                    android:textColor="@color/labelColor"
+                    app:layout_constraintLeft_toRightOf="@id/privacyCheckBox"
+                    app:layout_constraintRight_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/etPasswordConfirmation" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/settingSaveChangesButton"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/large_button_size"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/round_button"
+                    android:minWidth="@dimen/_70sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    app:layout_constraintLeft_toLeftOf="@id/startSettingsGuideline"
+                    app:layout_constraintRight_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/privacyText">
+
+
+                    <ImageView
+                        android:id="@+id/i"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:src="@drawable/ic_save"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/buyText"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/buyText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/save_changes"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btnBankDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/large_button_size"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/round_button_green"
+                    android:minWidth="@dimen/_70sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    app:layout_constraintLeft_toLeftOf="@id/startSettingsGuideline"
+                    app:layout_constraintRight_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/settingSaveChangesButton">
+
+                    <ImageView
+                        android:id="@+id/i1"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:src="@drawable/ic_bank"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/buyText1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/buyText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/bank_detail"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/tvVersionNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textAlignment="center"
+                    android:textColor="@color/splashColor"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintLeft_toLeftOf="@id/startSettingsGuideline"
+                    app:layout_constraintRight_toRightOf="@id/endSettingsGuideline"
+                    app:layout_constraintTop_toBottomOf="@id/btnBankDetail" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

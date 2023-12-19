@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/ic_placeholder_user"
+        app:layout_constraintBottom_toBottomOf="@id/messageConstraint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/messageConstraint" />
+
+    <ImageView
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:src="@drawable/chat_corner_left"
+        app:layout_constraintBottom_toBottomOf="@id/messageConstraint"
+        app:layout_constraintStart_toStartOf="@id/messageConstraint"
+        app:layout_constraintEnd_toStartOf="@id/messageConstraint" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/messageConstraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:background="@drawable/chat_background_grey"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        app:layout_constraintLeft_toRightOf="@id/userImage"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:maxWidth="@dimen/_180sdp"
+            android:minWidth="@dimen/_20sdp"
+            android:minHeight="@dimen/_25sdp"
+            android:textAlignment="textStart"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/messageTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/transparent"
+        android:fontFamily="@font/roboto_bold"
+        android:textAlignment="textEnd"
+        android:textColor="@color/splashColor"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintLeft_toLeftOf="@id/messageConstraint"
+        app:layout_constraintTop_toBottomOf="@id/messageConstraint" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

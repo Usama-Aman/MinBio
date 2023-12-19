@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--    Splash Screen-->
+    <string name="parnership">Parnership</string>
+
+    <!--                                Sign In Screen                                                    -->
+    <string name="sign_in_title">Connexion</string>
+    <string name="SignInEmail">email</string>
+    <string name="SignInPassword">Mot de passe</string>
+    <string name="signInToLogIn">Se connecter </string>
+    <string name="SignInForgotYourPassword">"Mot de passe oublié?"</string>
+    <string name="signInDontHaveAnAccount">"Vous n'avez pas de compte?"</string>
+    <string name="signInRegisterNow">"S'inscrire"</string>
+    <string name="signInEnable_biometric_login">"Biometrie"</string>
+
+    <!--                            Validation Messages -->
+    <string name="signInErrorMessageEnterEmail">"Entrez votre email"</string>
+    <string name="signInErrorMessageEnterPassword">"Entrez le mot de passe"</string>
+    <string name="signInTouch_rear_sensor">"Touchez votre capteur biometrique pour vous connecter"</string>
+    <string name="signInErrorMessagePlease_login_at_least_one_time">"Veuillez vous connecter au moins une fois pour utiliser les empreintes digitales"</string>
+
+
+    <!--                                 Register Screen        -->
+    <string name="register">"S'inscrire"</string>
+    <string name="SignUpName">"Prénom"</string>
+    <string name="SignUpLastName">"Nom"</string>
+    <string name="SignUpEmail">email</string>
+    <string name="SignUpTelephone">"Mobile"</string>
+    <string name="SignUpSirenNo">SIREN</string>
+    <string name="SignUpCompanyName">Denomination sociale</string>
+    <string name="SignUpKbisPicture">Kbis</string>
+    <string name="SignUpIdPicture">"Piece d'identite"</string>
+    <string name="signUpPassword">Mot de passe</string>
+    <string name="SignUpConfirmPassword">Confirmation</string>
+    <string name="SignUpCreateMyAccount">Enregistrer</string>
+    <string name="SignUpAlreadyHaveAnAccount">"Profil existe deja "</string>
+    <string name="signUpLoginNow">"Connectez-vous"</string>
+    <string name="SignUPToLogIn">Se connecter</string>
+    <!--                            Validation Messages -->
+    <string name="SignUpErrorMessageEnter_name">"Veuillez saisir votre  nom"</string>
+    <string name="SignUpErrorMessageEnterLastName">"Veuillez saisir votre prenom"</string>
+    <string name="SignUpErrorMessageInvalidEmail">"L'adresse email est invalide. "</string>
+    <string name="SignUpErrorMessageEnterEmail">"Veuillez saisir votre email"</string>d
+    <string name="SignUpErrorMessageEnterPassword">"Veuillez saisir le mot de passe"</string>
+    <string name="SignUpErrorMessageEnter_password_confirmation">"Veuillez confirmer votre mot de passe"</string>
+    <string name="SignUpErrorMessagePlease_enter_phone_number">Veuillez saisir votre mobile</string>
+    <string name="SignUpErrorMessageEnter_company_name">"Veuillez saisir le denomination sociale de l'entreprise"</string>
+    <string name="SignUpErrorMessageEnter_siret_number">"Entrez le numero SIREN "</string>
+    <string name="SignUpErrorMessageSiren_numer_must_be_equal_to_9">"Le SIREN doit etre de 9 chiffres"</string>
+    <string name="SignUpErrorMessagePlease_add_kbis_image_msg">"Ajoutez  KBIS"</string>
+    <string name="SignUpErrorMessagePlease_add_id_image_msg">"Ajoutez votre piece d'identite"</string>
+    <string name="SignUpErrorMessagePassword_length">"Le mot de passe doit comporter au moins 8 caractères"</string>
+    <string name="SignUpErrorMessagePassword_not_same">"Mot de passe : les 2 champs ne sont pas identique"</string>
+    <string name="SignUpAcceptTermsText">"J’accepte les termes et conditions d’utilisation"</string>
+    <string name="signUp_error_privacy">"Veuillez accepter les termes et conditions."</string>
+
+
+    <!--                                    Forgot Password Screen-->
+    <string name="forgotPasswordTitle">Mot de passe oublie</string>
+    <string name="forgotPasswordEmailOrPhone">"email ou numéro de mobile"</string>
+    <string name="forgotPasswordSend_me">"Envoyer"</string>
+    <string name="forgotPasswordFormatNote">"Remarque: Le format doit être comme +33109758351"</string>
+    <!--                            Validation Messages -->
+    <string name="forgotPasswordErrorMessageEnterEmail">"Veuillez saisir votre  email ou votre numéro de mobile"</string>
+
+
+    <!--                                    Reset Password  AH update 24/01/2020  -->
+    <string name="reset_password">"Reinitialiser votre mot de passe"</string>
+    <string name="OTP">CODE AUTHENTIFICATION</string>
+    <string name="resetPasswordNewPassword">"Nouveau mot de passe"</string>
+    <string name="resetPasswordConfirmPassword">"Confirmer"</string>
+    <string name="reset">"Réinitialiser le mot de passe"</string>
+
+    <!--                            Validation Messages  AH update 24/01/2020 -->
+    <string name="resetPasswordErrorMessagePlease_enter_the_verification_code">"Entrez le code recu"</string>
+    <string name="resetPasswordErrorMessageEnterPassword">"Entrez le mot de passe"</string>
+    <string name="resetPasswordErrorMessageEnter_password_confirmation">"Veuillez confirmer votre mot de passe"</string>
+    <string name="resetPasswordErrorMessagePassword_not_same">"Les mots de passes ne sont pas identique"</string>
+
+    <!--                                    OTP Confirmation                            -->
+    <string name="OtpConfirmationTitle">Confirmation</string>
+    <string name="OtpConfirmationMessage">SMS de confirmation vient d\'etre envoye. Veuillez entrer les 4 chiffres</string>
+    <string name="OtpConfirmationErrorMessageYou_have_not_received_the_sms">Vous n\'avez pas reçu de SMS</string>
+    <string name="OtpConfirmationSendMeBack">Renvoyer</string>
+    <string name="OtpConfirmationToLogIn">Se connecter</string>
+
+    <!--                            Validation Messages -->
+    <string name="OtpConfirmationErrorMessagePlease_enter_the_verification_code">"Entrez le code d'authentification"</string>
+
+    <!--                               Email Confirmation Screen  AH update 24/01/2020-->
+    <string name="EmailConfirmationTitle">Confirmation</string>
+    <string name="EmailConfirmationMessage">"Un email de confirmation vient d\'etre envoye"</string>
+    <string name="EmailConfirmationErrorMessageYou_have_not_received_the_mail">"Vous n\'avez pas reçu d'email?"</string>
+    <string name="emailConfirmationSendMeBack">Renvoyer</string>
+    <string name="EmailConfirmationToLogIn">Se connecter</string>
+
+    <!--                                Main Screen  Bottom Sections-->
+    <string name="catalog">Catalogue</string>
+    <string name="research">Recherche</string>
+    <string name="orders">Commandes</string>
+    <string name="account">Mon profil</string>
+    <string name="my_products">"Mes produits"</string>
+    <!--                                  Catalog Section Categories Name                               -->
+    <string name="bio">Bio</string>
+    <string name="favorites">Favoris</string>
+
+    <!--                                    Product list Screen -->
+    <string name="from">a partir de</string>
+    <string name="productListMerchants">Vendeurs</string>
+    <string name="productListMerchant">Vendeur</string>
+
+
+    <!--                                    Product Detail Screen -->
+    <string name="productDetailFrom">Prix</string>
+    <string name="you_have_stock">Avez-vous du stock?</string>
+    <string name="marchant">Vendeur</string>
+    <string name="marchants">Vendeurs</string>
+    <string name="to_sell">Vendre</string>
+    <string name="buy">Acheter</string>
+
+    <!--                                    Validation Messages   -->
+    <string name="product_has_no_seller">"Pas de marchand disponible pour ce produit"</string>
+    <string name="you_are_not_marchant">"Le statuts de l'entreprise est Radiée au tribunal de commerce"</string>
+
+
+    <!--                                    Puchase Form Screen  -->
+    <string name="purchase_form">Produit</string>
+    <string name="purchaseFrom">Prix</string>
+    <string name="puchaseFormProduct_from_organic_farming">Bio</string>
+    <string name="the_product_comes_from_organic_farming">Produit Bio</string>
+    <string name="the_seller_is_open_to_negotiation">Negociation possible</string>
+    <string name="purchaseFormSellerChoice">"Choisir le vendeur"</string>
+    <string name="purchaseFormSeller">Vendeur</string>
+    <string name="purchaseFormNote">Note</string>
+    <string name="purchaseFormPrice">Prix</string>
+    <string name="purchaseFormInventory_of_vendor">Stock  %s</string>
+    <string name="purchaseFormPerKg">le %s</string>
+
+
+    <!--                                    Buying Screen -->
+    <string name="buyingFrom">Prix</string>
+    <string name="subProductSize">Categorie %s</string>
+    <string name="subProductClass">Classe %s</string>
+    <string name="subProductPrice">"Prix/%s"</string>
+    <string name="is_the_minimum_you_can_buy">"  - Produit emballé "</string>
+    <string name="select_quantity">"Selectionnez la quantité"</string>
+    <string name="desired_quantity">Quantite souhaitee</string>
+    <string name="buyingPerUnit">%s</string>
+    <string name="buyingTotalPrice">Prix total</string>
+    <string name="do_you_want_to_negotiate">"Vous souhaitez negocier?"</string>
+    <!--                                    Validation Messages-->
+    <string name="not_in_stock">"Plus de stock"</string>
+    <string name="this_seller_does_not_have_enough_stock">Ce vendeur ne dispose pas d\'assez de stock</string>
+
+
+    <!--                                 Negotiation Screen  -->
+    <string name="negoTitle">Sommaire</string>
+    <string name="negoProduct">Prodiut</string>
+    <string name="negoQuantity">Quantite</string>
+    <string name="negoPrice">Prix</string>
+    <string name="negoTotalPrice">Prix Total</string>
+    <string name="negoSend_my_proposal">Envoyer</string>
+    <string name="negoAdd_address">"Adresse de livraison"</string>
+    <string name="you_have">Il reste</string>
+    <string name="x_tries"> propositon(s)</string>
+    <string name="in_minutes"> </string>
+    <string name="le_vender">Vendeur</string>
+    <string name="open_to_negotiate">Faites votre offre</string>
+    <string name="order_has_been_cancelled">"Commande annulée"</string>
+    <string name="yourPrice">"Prix initial"</string>
+    <string name="proposalPrice">"Proposition"</string>
+    <string name="product_proposal">"Proposition de produit"</string>
+    <string name="accept">"Accepter"</string>
+    <string name="reject">"Rejeter"</string>
+    <string name="cancel_and_go_back_to_orders">"Annuler"</string>
+    <string name="nego_delivery_charges">"Frais de livraison"</string>
+    <string name="negoDestination">Adresse de livraison</string>
+    <string name="negoPriceErrorMessage">"Veuillez saisir le prix"</string>
+    <string name="nego_add_shipping_address">"Ajoutez l'adresse de livraison"</string>
+
+
+    <!--                                Cart Screen   -->
+    <string name="cartTitle">Panier</string>
+    <string name="cartProduct">Produit</string>
+    <string name="cartQuantity">Quantite</string>
+    <string name="cartPrice">Prix</string>
+    <string name="carttotal_ht">Total (HT)</string>
+    <string name="carttva">TVA</string>
+    <string name="carttotal_tcc">Total (TTC)</string>
+    <string name="cartAdd_address">"Adresse de livraison"</string>
+    <string name="select_a_delivery_type">"Type de livraison souhaite"</string>
+    <string name="shared_delivery">"Livraison partagee"</string>
+    <string name="fast_delivery">"Livraison"</string>
+    <string name="discount_on_product">Remise %s</string>
+    <string name="confirm_cart">Valider le Panier</string>
+    <string name="cartDiscount">Remise</string>
+    <string name="cartSoldBy">Vendu par</string>
+    <string name="cart_delivery_charges">"Frais de livraison "</string>
+    <string name="do_you_want_to_take_coverage">"Demande d'encours"</string>
+    <string name="cartDestination">Adresse de livraison</string>
+    <string name="cartAddressText">"Adressede livraison"</string>
+    <string name="cartDateText">"Date de livarison"</string>
+    <!--                                Validation Message  -->
+    <string name="cartDeleteProduct">Etes-vous sûr de vouloir supprimer le produit?</string>
+
+
+    <!--                                Payment Screen -->
+    <string name="paymentTitle">Paiement</string>
+    <string name="paymentProduct">Produit</string>
+    <string name="paymentQuantity">Quantite</string>
+    <string name="paymentPrice">Prix</string>
+    <string name="paymentTotalPrice">Prix Total</string>
+    <string name="pay_by_credit_card">Carte bancaire</string>
+    <string name="cb_visa_mastercard">CB, Visa, Mastercard</string>
+    <string name="pay_with_my_tokens">Token VIC</string>
+    <string name="pay_in_cash_at_the_reception">Payer au vendeur</string>
+    <string name="make_a_sepa_direct_debit">SEPA (Prelevement)</string>
+    <string name="payment_ok">"Paiement accepté"</string>
+
+
+    <!--                                        Stripe Screen -->
+    <string name="enter_details">"Entrez les details"</string>
+    <string name="stripe_done">"Validé"</string>
+    <!--                                Validation Messages  -->
+    <string name="invalid_card">"Carte invalide"</string>
+
+
+    <!--                                Coverage Screen   -->
+    <string name="coverage">Encours</string>
+    <string name="amountLessThanCoverage">"%s d'encours accepte"</string>
+    <string name="amountGreatorThanCoverage">" %1s d'encours,  reste a payer %2s "</string>
+    <string name="coveragePlaceOrder">"Passez la commande"</string>
+
+
+    <!--                                        Research Screen    -->
+    <string name="search_a_product">Rechercher un produit</string>
+    <string name="keywords">Mots cles</string>
+    <string name="researchVendor">"Vendeur"</string>
+    <string name="researchOrigin">Origine</string>
+    <string name="researchPrice">Price</string>
+    <string name="min_price_less">"Le prix min doit  être supperieur à 0"</string>
+    <string name="max_price_greater">Le montant doit etre supperieur au prix minimum</string>
+    <string name="eggplant_apple_batavia">Aubergine,pomme,batavia …</string>
+    <string name="all">Tout</string>
+    <string name="no_products">"Aucun produit"</string>
+    <string name="max">max</string>
+    <string name="min">min</string>
+    <string name="researchSelectOrigin">"Sélectionnez l'origine"</string>
+    <string name="researchSelectMerchant">"Sélectionnez un vendeur"</string>
+    <string name="researchButton">Recherche</string>
+
+
+    <!--                                Account Settings Screen  AH update 24/01/2020-->
+    <string name="account_settings">Profil</string>
+    <string name="accountSettingsCompany">Entreprise</string>
+    <string name="accountSettingSiret">Siren</string>
+    <string name="accountSettingsFirstName">"Prénom"</string>
+    <string name="accountSettingsLastName">"Nom"</string>
+    <string name="accountSettingsTelephone">Mobile</string>
+    <string name="accountSettingsEmail">"email"</string>
+    <string name="accountSettingsAddress">Adresse</string>
+    <string name="auto_nego_approved">"Negociation automatique"</string>
+    <string name="accountSettingsKbis_picture">Kbis</string>
+    <string name="accountSettingsId_picture">"Piece d'identite"</string>
+    <string name="accountSettingsPassword">Mot de passe</string>
+    <string name="accountSettingsConfirmationPassword">Confirmation</string>
+    <string name="save_changes">Enregistrer</string>
+    <string name="version">"Version  "</string>
+    <string name="accountPrivacyText">"J’ai lu et accepte les termes et conditions d’utilisation"</string>
+
+    <!--                            Validation Messages AH update 24/01/2020. -->
+    <string name="AccountSettingsErrorMessageEnter_name">"Entrez le nom"</string>
+    <string name="AccountSettingsErrorMessageInvalidEmail">"email invalide ou deja utilisé"</string>
+    <string name="AccountSettingsErrorMessageEnterEmail">"Entrez votre email"</string>d
+    <string name="AccountSettingsErrorMessageEnterPassword">"Entrez le mot de passe"</string>
+    <string name="AccountSettingsErrorMessageEnter_password_confirmation">"Confirmer votre mot de passe"</string>
+    <string name="AccountSettingsErrorMessagePlease_enter_phone_number">Entrez votre mobile</string>
+    <string name="AccountSettingsErrorMessageEnter_company_name">"Entrez la raison sociale"</string>
+    <string name="AccountSettingsErrorMessageEnter_siret_number">"Entrez le SIREN"</string>
+    <string name="AccountSettingsErrorMessageEnter_pre_name">" Entrez le Prenom "</string>
+    <string name="AccountSettingsErrorMessageSiren_numer_must_be_equal_to_9">"Le SIREN doit avoir 9 chiffres"</string>
+    <string name="AccountSettingsErrorMessagePlease_add_kbis_image_msg">"Ajoutez  KBIS"</string>
+    <string name="AccountSettingsErrorMessagePlease_add_id_image_msg">"Ajoutez une piece d'identite"</string>
+    <string name="AccountSettingsErrorMessagePassword_length">"Le mot de passe doit comporter au moins 6 caractères"</string>
+    <string name="AccountSettingsErrorMessagePassword_not_same">" Mot de passe et confirmation sont différents"</string>
+    <string name="AccountSettingsCurrent_language_english">"Langue actuelle est deja l'anglais "</string>
+    <string name="AccountSettingsCurrent_language_french">"Langue actuelle est deja le français "</string>
+
+
+    <!--                                    when Language is changed  AH update 24/01/2020 -->
+    <string name="select_the_language_you_want_to_use_in_the_app">"Langue"</string>
+    <string name="AccountSettingChangeLanguageButton">" its Flag now on the app "</string>
+    <string name="french">Français</string>
+    <string name="english">Anglais</string>
+
+    <!--                                Add/Edit  Product Main Screen AH update 24/01/2020 -->
+    <string name="sales_form"> Vendre - %s</string>
+
+    <!--                                Add/Edit  Product Screen AH update 24/01/2020 -->
+    <string name="productName">Produit</string>
+    <string name="addEditProductFrom">Prix</string>
+    <string name="addEditPerUnit">%s</string>
+    <string name="inventory">Stock</string>
+    <string name="productPrice">Prix</string>
+    <string name="sale_by_case_of">"Emballé par"</string>
+    <string name="product_from_organic_farming">"Bio"</string>
+    <string name="i_am_open_to_negotiation">"Negociable"</string>
+    <string name="product_select_size">"Calibre"</string>
+    <string name="product_select_class">"Categorie"</string>
+    <string name="product_select_vat">"Sélectionnez la TVA"</string>
+    <string name="slect_origin">"Origine"</string>
+    <string name="threshold_price">"Prix ​​acceptable"</string>
+    <string name="vat">"TVA"</string>
+    <string name="origin">Origine</string>
+    <string name="productDetails">Detail</string>
+    <string name="photos">Photos</string>
+    <string name="productDiscount">Remise</string>
+    <string name="to_put_up_for_sale">Vendre</string>
+
+    <!--                            Validation Messages AH update 24/01/2020. -->
+    <string name="please_enter_details">"Entrez les details"</string>
+    <string name="delete_picture">"Supprimez la photo"</string>
+    <string name="SalesFormErrorMessageplease_enter_product_detail">Donnez des details sur le produit</string>
+    <string name="SalesFormErrorMessageMin_price_cant_be_zero">"Le prix acceptable ne peut etre 0"</string>
+    <string name="SalesFormErrorMessagePlease_enter_product_name">"Entrez la variété "</string>
+    <string name="SalesFormErrorMessagePleaseEnterPrice">"Entrez le prix"</string>
+    <string name="SalesFormErrorMessagePleaseEnterQuantity">"Entrez la quantite disponible"</string>
+    <string name="min_price_cannot_be_greater_than_actual_price">"Le prix acceptable ne peut etre superieur ou egal au prix initial"</string>
+    <string name="max_price_cannot_be_less_than_min_price">"Le prix max ne peut-être inférieur au prix min"</string>
+    <string name="vat_cannot_be_grator_than_100">"La TVA ne peut pas etre superieure a 100%"</string>
+    <string name="discount_cannot_be_grator_than_100">"La reduction ne peut etre superieure a 100%"</string>
+    <string name="add_one_picture_of_product">"Ajoutez une photo du produit "</string>
+    <string name="SalesFormErrorMessageQuantityCantBeZero">"La quantite ne peut pas etre 0 "</string>
+    <string name="SalesFormErrorMessagesaleCaseCantBeZero">"Quantité ne peut etre 0"</string>
+    <string name="SalesFormErrorMessagePriceCantBeZero">"Le prix ne peut pas etre 0 "</string>
+    <string name="SalesFormErrorMessageEnterSalesCaseAmount">"Veuillez saisir le prix de vente"</string>
+    <string name="SalesFormErrorMessageQuantityShouldMatchIwthBox">"Le minimum vendu et le stock ne correspondent pas"</string>
+    <string name="SalesFormErrorMessageSaleCaseCantBeZero">"La quantité ne peut etre 0"</string>
+    <string name="SalesFormErrorMessageplease_enter_min_price">Entrez le prix acceptable</string>
+    <!--                            Where is this form AH update 24/01/2020. -->
+    <string name="there_is_no_product_please_click_add_button_to_create">"Cliquez  'Ajouter' "</string>
+
+
+    <!--                                        Orders Screen  Summary AH update 24/01/2020.  -->
+    <string name="my_orders">Commandes</string>
+    <string name="past">ENVOUEES</string>
+    <string name="received">RECUES </string>
+    <string name="order_overdraft">"ENCOURS"</string>
+    <string name="n_dot">N°</string>
+    <string name="date">Date</string>
+    <string name="amount_ht">Montant HT</string>
+    <string name="order_status">Statut</string>
+    <string name="order_details">Detail</string>
+
+    <!--                                OrderDetail Screen    AH update 24/01/2020. -->
+    <string name="order_number">N° </string>
+    <string name="date_of_the_order">Date</string>
+    <string name="order_detail_title">Commande</string>
+    <string name="companyNameLabel">"Designation sociale"</string>
+    <string name="orderDetailName">Contact</string>
+    <string name="orderDetailAddress">Adresse</string>
+    <string name="orderDetailTelephone">Mobile</string>
+    <string name="orderDetailEmail">"@mail"</string>
+    <string name="status">Statut</string>
+    <string name="soldBy">Vendeur - </string>
+
+    <string name="orderDetailProduct">Produit</string>
+    <string name="orderDetailQuantity">"Quantité"</string>
+    <string name="orderDetailPrice">Prix HT</string>
+
+    <string name="total_ht">Total HT</string>
+    <string name="discount">Remise</string>
+    <string name="tva">TVA</string>
+    <string name="delivery_charges">"Frais de livraison"</string>
+    <string name="total_tcc">Total TTC</string>
+
+    <string name="rate_the_order">"Notez"</string>
+    <string name="navigate_order">"Suivre"</string>
+    <string name="overdraft_message_order_detail">"%1s d'encours, reste a payer %2s"</string>
+    <string name="pay_the_coverage">"Payez l'encours"</string>
+
+    <!--                                OrderDetail Screen  DO NOT FOUND   AH update 24/01/2020. -->
+    <string name="details">Detail</string>
+    <string name="province">Province</string>
+
+    <!--                                    Order status  Don't change these ... -->
+    <string name="negotitiationStatus">"Nego"</string>
+    <string name="CancelledStatus">"Annulé"</string>
+    <string name="CompleteStatus">"Achevé"</string>
+    <string name="PreOrderStatus">Pre-commande</string>
+    <string name="DeclineStatus">"Decliné"</string>
+    <string name="NegoapprovedStatus">"Accepté"</string>
+    <string name="PaidStatus">"Payé"</string>
+    <string name="Pending_payment">"Attente de paiement"</string>
+    <string name="PendingStatus">Attente</string>
+    <string name="UnpaidStatus">"Non paye"</string>
+    <string name="RejectedStatus">"Rejeté"</string>
+    <string name="NegoRejectedStatus">"Nego - Rejetee"</string>
+    <string name="ExpiredStatus">"Expiré"</string>
+
+    <!--                                               Maps Screen After Cart      AH update 24/01/2020.  popup Not use anymore  -->
+    <string name="delivery_address_is_ok">"Adresse de livraison inccorrecte"</string>
+
+    <!--                                    Track Order Screen -->
+    <string name="deliveryPending">"En attente"</string>
+    <string name="deliveryAccepted">"Accepté"</string>
+    <string name="deliveryCompleted">"Terminé"</string>
+    <string name="companyNameLabelTrackScreen">"Nom de la compagnie"</string>
+    <string name="itemsLabel">"Articles"</string>
+    <string name="rateLabel">"Taux"</string>
+    <string name="viewMapLabel">"Vue"</string>
+    <string name="driverNameLabel">"Nom du livreur"</string>
+    <string name="orderNumberLabel">"N ° de commande: %s"</string>
+    <string name="chat">"Bavarder"</string>
+
+
+    <!--                                    On Chart-->
+    <string name="we_advise_you_to_buy_today">Aujourd\'hui, nous vous conseillons d\'acheter</string>
+    <string name="current_price">prix actuel:</string>
+    <string name="average_price_year">prix moyen:</string>
+    <string name="price_trend">Tendance</string>
+    <string name="year">"année"</string>
+    <string name="month">mois</string>
+    <string name="week">semaine</string>
+    <string name="average_price_month">prix ​​moyen mois:</string>
+    <string name="average_price_week">prix ​​moyen semaine:</string>
+
+
+    <!--                                        Rating Activity (Buyer)    AH update 24/01/2020.  -->
+    <string name="pricing">le prix</string>
+    <string name="product_availability">"La disponibilite des produits"</string>
+    <string name="product_quality">"La qualite les produits"</string>
+    <string name="relation_with_buyer">"Relation client"</string>
+    <string name="trust_relation">"Relation de confiance "</string>
+    <!--                                   Rating Activity (Buyer)   NOT CLEAR WHY TWEECE AH update 24/01/2020.  -->
+    <string name="enter_compliment">"Entrez un avis"</string>
+    <string name="your_compliments">"Votre avis"</string>
+
+    <!--                                        Rating Activity (DRIVER)    NOT CLEAR WHY TWEECE  AH update 24/01/2020.  -->
+    <string name="driver_rating">"Évaluation"</string>`
+    <string name="rate_the_driver">"Evaluez le livreur"</string>
+
+    <!--                                        Rating Activity (???)    NOT CLEAR FOR WHOM  AH update 24/01/2020.  -->
+    <string name="comments">Commentaire</string>
+
+    <!--                                        Notification belt  WHERE IN THE APP  AH update 24/01/2020.-->
+    <string name="notifications_title">"Notifications"</string>
+    <string name="notifications_clearAll">"Effacer"</string>
+
+    <!--                                        PAYMENT  AH update 24/01/2020.  -->
+    <string name="fcm_token">FCM Token %s</string>
+
+    <!--                                 BUYER CHOICE VENDOR  PRODUCT   WHERE IN THE APP  AH update 24/01/2020   -->
+    <string name="per_kg"> / %s</string>
+
+    <!--                                VERSIONNING  update 24/01/2020  -->
+    <string name="app_name">VIC WSP</string>
+    <string name="appVersionSplash">v1.20</string>
+
+    <!--                                General Strings      WHERE IN THE APP  AH update 24/01/2020  (Error Messages or just strings) -->
+    <string name="loading">"Chargement"</string>
+    <string name="loading_please_wait">"Chargement. Patientez …"</string>
+    <string name="something_is_not_right">"Quelque chose ne fonctionne pas"</string>
+
+    <string name="price">Prix</string>
+
+    <string name="currently_there_is_no_data">"Actuellement, il n'y a pas de donnees"</string>
+    <string name="back_pressed_again">"Veuillez cliquer sur 'Retour' pour quitter"</string>
+    <string name="priceperkg">Prix/%s</string>
+    <string name="total_price">Prix total</string>
+    <string name="added_to_cart">" %s ajoute dans votre panier"</string>
+    <string name="delete_product">Etes-vous sur de vouloir supprimer?</string>
+    <string name="exit_app">"Etes-vous sur de vouloir quitter? "</string>
+    <string name="stockIsNotAvailable">"Le vendeur manque de stock"</string>
+    <string name="order_placed">"Votre commande est passée"</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="done">Termine</string>
+    <string name="select_all">"Tout sélectionner"</string>
+    <string name="title_activity_maps">Carte</string>
+    <string name="permission_denied">"Permission refusée"</string>
+    <string name="add_shipping_address">"Ajoutez l'adresse de livraison"</string>
+    <string name="ok">OK</string>
+    <string name="close_spinner">Fermer</string>
+    <string name="percentage">%</string>
+    <string name="confirm">Confirmer</string>
+    <string name="cart_is_empty">"Le panier est vide"</string>
+    <string name="error">Erreur</string>
+    <string name="success">Valide</string>
+    <string name="pick_up">Recuperer</string>
+    <string name="add_products">"Ajouter des produits"</string>
+    <string name="cancel">Annuler</string>
+    <string name="radiation_status_is_not_good">"L'entreprise est radiée au tribunal de commerce"</string>
+
+
+    <!--                                        Chat  screen-->
+    <string name="hint_type_your_message">"Tapez votre message"</string>
+    <string name="slide_to_cancel">"Faire glisser pour annuler"</string>
+    <string name="chatOrderNumber">N° de commande : %s</string>
+
+
+    <!--                                    Complaint Screen    -->
+    <string name="complaint_title">"Réclamation"</string>
+    <string name="order_no_complaint">"N° de commande"</string>
+    <string name="items_complaint">"Produit"</string>
+    <string name="complaint_complaint">"Réclamation"</string>
+    <string name="comment_complaint">"Commentaire"</string>
+    <string name="complaint_dialog_title">"Sélectionnez une réclamation"</string>
+    <string name="select_order_no_complaint">"Sélectionnez le numéro de commande"</string>
+    <string name="select_items_complaint_error">"Veuillez sélectionner les articles"</string>
+    <string name="select_items_complaint">"Sélectionnez les articles"</string>
+    <string name="select_complaint_type_complaint">"Sélectionnez le type de reclamation"</string>
+    <string name="enter_comments_complaint">"Veuillez  commenter"</string>
+    <string name="hint_comments_complaint">"Entrez les details"</string>
+
+
+    <!--                                      Support Screen     -->
+    <string name="support_title">"Support"</string>
+    <string name="topic_support">"Sujet"</string>
+    <string name="email_support">email</string>
+    <string name="issue_support">"Question"</string>
+    <string name="hint_issue_support">"Entrez la question"</string>
+    <string name="select_topic_support">"Sélectionnez un sujet"</string>
+    <string name="enter_issue_support">"Veuillez saisir votre question"</string>
+    <string name="are_you_to_call">"Voulez-vous vraiment appeler?"</string>
+    <string name="something_s_wrong_let_us_know">"Aidez-nous à nous améliorer"</string>
+
+
+    <!--                            Bank Screen   -->
+    <string name="bank_detail">Coordonnees bancaires</string>
+    <string name="good">Bien</string>
+    <string name="bank_address">"Adresse de l\'etablissement"</string>
+    <string name="bank_name">Banque</string>
+    <string name="bank_country">Pays</string>
+    <string name="bank_state">Etat</string>
+    <string name="bank_city">Ville</string>
+    <string name="bank_zip">Code Postal</string>
+    <string name="bank_account_name">Nom du compte</string>
+    <string name="bank_account_number">N° de compte</string>
+    <string name="bank_routing_code">Code Banque</string>
+    <string name="bank_swift_number">BIC</string>
+    <string name="bank_iban">IBAN</string>
+    <string name="upload_bank_detail_file">Telechargez votre RIB</string>
+    <string name="bank_submit">Sauvegarder</string>
+    <string name="bank_error_enter_bank_detail_file">Entrez votre RIB</string>
+    <string name="bank_last_name">Prenom</string>
+    <string name="bank_number">Nombre</string>
+    <string name="bank_company">Entreprise</string>
+    <string name="bank_first_name">Nom</string>
+    <string name="bank_slect_origin">"Selectionnez l'origine "</string>
+    <string name="bank_btn_save">Sauvegarder</string>
+    <string name="bank_error_enter_name">"Veuillez saisir le nom de la banque"</string>
+    <string name="bank_error_enter_bank_address">Entrez vos ccoordonnees bancaires</string>
+    <string name="bank_error_enter_city"> Entree la ville</string>
+    <string name="bank_error_enter_country">Entrez le pays</string>
+    <string name="bank_error_enter_state">Entrez l\'etat</string>
+    <string name="bank_error_enter_zip">Entrez le code postal</string>
+    <string name="bank_error_enter_account_name">Entrez le nom du compte</string>
+    <string name="bank_error_enter_account_number">Entrez le numero de compte</string>
+    <string name="bank_error_enter_routing_code">Entrez le code bancaire</string>
+    <string name="bank_error_enter_swift_number">Entrez le code BIC</string>
+    <string name="bank_error_enter_iban">Entrer votre IBAN</string>
+
+
+    <string name="deliveryPickupDate">Date de livraison</string>
+
+
+    <!--    Complaint Screen    -->
+    <string name="msg_please_add_comment_first">Ajoutez un commentaire</string>
+    <string name="my_complaints">Reclamation</string>
+    <string name="tvAssigned">"Assigné - "</string>
+    <string name="complaintType">Type : </string>
+    <string name="complaintOrderNo">Commande : </string>
+
+    <!--    Support Screen    -->
+    <string name="my_support">Support</string>
+
+    <!--                Save Card Screen   -->
+    <string name="save_card">"Enregistrer la carte"</string>
+    <string name="card_holder">"Titulaire de la carte"</string>
+    <string name="expiry">"Date d'expiration"</string>
+    <string name="deleteCard">"Voulez-vous vraiment supprimer cette carte?"</string>
+
+    <!--       Credit Notes Screen  -->
+    <string name="credit_notes">"Notes de crédit"</string>
+    <string name="ticket_no">"Numéro de billet"</string>
+
+
+</resources>
